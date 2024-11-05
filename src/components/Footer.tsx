@@ -1,0 +1,96 @@
+import { Heart, Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+export default function Footer() {
+  return (
+    <footer className="bg-secondary-900 text-gray-300">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* About HLRE */}
+          <div>
+            <Link to="/" className="flex items-center space-x-2 mb-4">
+              <Heart className="h-8 w-8 text-primary-400 fill-current" />
+              <span className="text-2xl font-bold text-white">HLRE</span>
+            </Link>
+            <p className="text-sm">
+              Empowering lives through hope, love, resilience, and the journey of recovery. 
+              Join us in documenting and sharing stories of transformation through our Canadian Rockies expedition.
+            </p>
+          </div>
+
+          {/* Connect */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Connect With Us</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-2">
+                <Mail className="h-5 w-5" />
+                <span>info@hlre2025.com</span>
+              </div>
+              <div className="flex flex-col space-y-2">
+                <div className="flex items-center space-x-2">
+                  <Phone className="h-5 w-5" />
+                  <span>Producer: 780-554-5576</span>
+                </div>
+                <div className="flex items-center space-x-2 pl-7">
+                  <span>Director: 780-909-2763</span>
+                </div>
+              </div>
+              <div className="flex items-start space-x-2">
+                <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
+                <div className="flex flex-col">
+                  <span>5407 92 b Ave</span>
+                  <span>Edmonton, Alberta T5J 2B2</span>
+                </div>
+              </div>
+              <div className="flex space-x-4 pt-2">
+                <a 
+                  href="https://www.facebook.com/profile.php?id=61555182577107"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-primary-600 rounded-full hover:bg-primary-700 transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/hlre2025/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 bg-accent-600 rounded-full hover:bg-accent-700 transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <div className="space-y-3">
+              <Link to="/about" className="block hover:text-primary-400 transition-colors">
+                About the Expedition
+              </Link>
+              <Link to="/resources" className="block hover:text-primary-400 transition-colors">
+                Books & Resources
+              </Link>
+              <a 
+                href="https://vimeo.com/773854707"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-primary-400 transition-colors"
+              >
+                Watch Project Pitch
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 pt-8 border-t border-secondary-800 text-center">
+          <p>&copy; {new Date().getFullYear()} Hope, Love, Resilience Expedition. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
