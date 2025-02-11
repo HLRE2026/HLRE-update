@@ -9,7 +9,7 @@ const timeline = [
   {
     year: "April 2018",
     title: "Life-Changing Stroke",
-    description: "While playing hockey, Mark suffered a major stroke resulting in left-side paralysis. This forced him to relearn basic life skills and face significant mental health challenges."
+    description: "After a game of hockey, Mark suffered a major stroke resulting in left-side paralysis. This forced him to relearn basic life skills and face significant mental health challenges."
   },
   {
     year: "Sept 2018",
@@ -29,7 +29,7 @@ const timeline = [
   {
     year: "2024",
     title: "The Expedition",
-    description: "Embarking on a 300km journey from Jasper to Banff, pushing physical and mental limits while inspiring others to overcome their own challenges."
+    description: "Embarking on a 300km journey from Banff to Jasper, pushing physical and mental limits while inspiring others to overcome their own challenges."
   }
 ];
 

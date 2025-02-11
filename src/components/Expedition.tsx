@@ -5,7 +5,7 @@ const expeditionDetails = [
     icon: Route,
     title: "Journey Distance",
     value: "300 km",
-    description: "Jasper to Banff through the Canadian Rockies"
+    description: "Banff to Jasper through the Canadian Rockies"
   },
   {
     icon: Calendar,
@@ -28,10 +28,10 @@ const expeditionDetails = [
 ];
 
 const fundingBreakdown = [
-  { item: "Broadcast License (CBC)", amount: "$25,000" },
-  { item: "Alberta Media Fund", amount: "$23,750" },
-  { item: "CAVCO Tax Credit", amount: "$4,000" },
-  { item: "Community Funding", amount: "$47,250" }
+  { item: "Broadcast License (CBC Absolutely Canadian - unconfirmed)", amount: "$25,000" },
+  { item: "Alberta Media Fund (Made in Alberta - unconfirmed)", amount: "$23,750" },
+  { item: "CAVCO (Canadian Film Labour Tax Credit)", amount: "$4,000" },
+  { item: "Community Funding (arts councils, foundations, sponsors)", amount: "$47,250" }
 ];
 
 export default function Expedition() {

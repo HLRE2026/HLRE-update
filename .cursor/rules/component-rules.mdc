@@ -1,0 +1,11 @@
+---
+description: SX must use Tailwind CSS for styling, maintain a consistent look, and leverage lucide-react icons for logos or UI elements.
+globs: 
+---
+{
+  "componentRules": {
+    "jsxUsage": "JSX must use Tailwind CSS for styling, maintain a consistent look, and leverage lucide-react icons for logos or UI elements.",
+    "stateHandling": "Prefer React hooks for state management where applicable.",
+    "separationOfConcerns": "Each component should encapsulate its logic, presentation, and styling without side effects leaking into other parts of the app."
+  }
+}

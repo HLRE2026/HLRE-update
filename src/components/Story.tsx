@@ -6,13 +6,13 @@ export default function Story() {
           <div>
             <h2 className="text-4xl font-bold mb-6">Mark's Story</h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Mark Ivancic's journey is a powerful testament to resilience, transformation, and the unwavering strength of the human spirit. A beloved teacher, musician, and community leader, Mark inspired countless lives through his adventurous spirit and compassionate heart. But in 2018, his life took an unexpected turn when he suffered a severe stroke that left him with partial paralysis, challenging him to rebuild his life from the ground up.
+              Mark Ivancic's journey is a powerful testament to resilience, transformation, and the unwavering strength of the human spirit. A beloved teacher, musician, and community leader, Mark inspired countless lives through his adventurous spirit and compassionate heart. But in 2018, after a game of hockey, his life took an unexpected turn when he suffered a severe stroke that left him with partial paralysis, challenging him to rebuild his life from the ground up.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Determined to overcome these obstacles, Mark discovered the profound impact of hope, love, and resilience. This newfound purpose became the foundation of the Hope, Love, & Resilience Expedition (HLRE)—a mission to inspire and empower others facing life's toughest challenges. Through the HLRE, Mark shares his story of recovery, strength, and courage, reminding us all that no matter the hardship, there's always a way forward.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Today, Mark is on a mission to make a difference. Traveling across communities and sharing his story, he inspires others to embrace resilience and find purpose in their journeys. His work has touched thousands of lives and continues to ignite hope and positive change wherever he goes.
+              Deeply rooted in the Spruce Grove and Stony Plain communities, Mark's impact as a teacher and musician has touched countless lives. Through his classroom teaching in Stony Plain and his musical performances, he has always found ways to inspire and connect with others. Now, he aspires to expand his reach through motivational speaking engagements, sharing his story of recovery and resilience with a broader audience. His vision is to combine his authored works with powerful presentations, showing others that every challenge can become a stepping stone to something greater.
             </p>
           </div>
           <div className="relative">

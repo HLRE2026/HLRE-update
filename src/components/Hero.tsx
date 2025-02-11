@@ -18,15 +18,6 @@ export default function Hero() {
             Empowering individuals to overcome challenges through the transformative power of hope, love, and resilience. Join us in making a difference.
           </p>
         </div>
-        
-        <div className="flex flex-col sm:flex-row gap-4 mt-auto mb-16">
-          <button className="bg-primary-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary-600 transition-colors">
-            Donate Now
-          </button>
-          <button className="bg-white text-gray-900 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors">
-            Learn More
-          </button>
-        </div>
       </div>
     </div>
   );

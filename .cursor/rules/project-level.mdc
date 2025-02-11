@@ -1,0 +1,49 @@
+---
+description: Global and file-specific cursor rules for the HLRE project. This file defines project-wide best practices and uses glob patterns to enforce different rules on various parts of the codebase.
+globs: src/**/*.ts{,x}
+---
+{
+  "project": "HLRE-update",
+  "version": "2.0",
+  "description": "Global and file-specific cursor rules for the HLRE project. This file defines project-wide best practices and uses glob patterns to enforce different rules on various parts of the codebase.",
+  "global": {
+    "fileOperations": "When using file operations (with open), always include encoding='utf-8'.",
+    "errorHandling": "Use try-catch blocks with descriptive error messages (include exception details).",
+    "variableManagement": "Define all major variables in ALL CAPS at the top of scripts (excluding dynamic user input).",
+    "termcolor": "Print messages with termcolor at every significant step."
+  },
+  "globRules": [
+    {
+      "pattern": "src/**/*.ts{,x}",
+      "description": "All TypeScript and TSX files in the src folder",
+      "rules": {
+        "strictTS": "Follow the strict TypeScript rules (as defined in tsconfig.* files).",
+        "linting": "Enforce ESLint and typescript-eslint configurations as provided.",
+        "namingConvention": "Major variables should be in ALL CAPS; component and function names use PascalCase."
+      }
+    },
+    {
+      "pattern": "src/components/**/*.tsx",
+      "description": "React components",
+      "rules": {
+        "componentDesign": "Components must be modular and leverage JSX styling with Tailwind CSS classes.",
+        "propValidation": "Ensure proper prop validation and clear separation of concerns in each component."
+      }
+    },
+    {
+      "pattern": "src/pages/**/*.tsx",
+      "description": "Page-level components",
+      "rules": {
+        "layoutConsistency": "Maintain consistent header, footer, and overall layout styling.",
+        "responsiveness": "Pages should be responsive using Tailwind grid and flex utilities."
+      }
+    },
+    {
+      "pattern": "public/**/*.html",
+      "description": "Public HTML files",
+      "rules": {
+        "accessibility": "All HTML must include semantic tags and proper meta tags for accessibility."
+      }
+    }
+  ]
+}

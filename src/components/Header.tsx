@@ -37,9 +37,6 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
-            <button className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors font-medium">
-              Donate
-            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -69,9 +66,6 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <button className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors font-medium w-full">
-                Donate
-              </button>
             </div>
           </div>
         )}

@@ -1,0 +1,11 @@
+---
+description: Rules for page layout
+globs: 
+---
+{
+  "pageRules": {
+    "layout": "Pages should consistently include shared components (like Header and Footer) and use container classes for proper spacing.",
+    "performance": "Ensure that pages load minimal resources and leverage lazy loading where possible.",
+    "accessibility": "Follow accessibility best practices such as semantic HTML, proper aria attributes, and responsive design."
+  }
+}
