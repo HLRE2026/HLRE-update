@@ -28,10 +28,10 @@ const expeditionDetails = [
 ];
 
 const fundingBreakdown = [
-  { item: "Broadcast License (CBC Absolutely Canadian - unconfirmed)", amount: "$25,000" },
-  { item: "Alberta Media Fund (Made in Alberta - unconfirmed)", amount: "$23,750" },
-  { item: "CAVCO (Canadian Film Labour Tax Credit)", amount: "$4,000" },
-  { item: "Community Funding (arts councils, foundations, sponsors)", amount: "$47,250" }
+  { item: "Edmonton Arts Council (applied & pending)", amount: "TBD" },
+  { item: "Alberta Foundation for the Arts (applied & pending)", amount: "TBD" },
+  { item: "Canada Council for the Arts (applied & pending)", amount: "TBD" },
+  { item: "Community Fundraising (individuals, sponsors)", amount: "$50,000+" }
 ];
 
 export default function Expedition() {
