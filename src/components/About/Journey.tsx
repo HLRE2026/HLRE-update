@@ -27,7 +27,7 @@ const timeline = [
     description: "Invested in a recumbent bicycle, discovering a new passion that would lead to the conception of the Hope Love & Resilience Expedition."
   },
   {
-    year: "2024",
+    year: "2025",
     title: "The Expedition",
     description: "Embarking on a 300km journey from Banff to Jasper, pushing physical and mental limits while inspiring others to overcome their own challenges."
   }
