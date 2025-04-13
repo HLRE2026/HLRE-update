@@ -11,7 +11,7 @@ const expeditionDetails = [
     icon: Calendar,
     title: "Duration",
     value: "6 Days",
-    description: "Challenging trek starting August 2024"
+    description: "September 2025"
   },
   {
     icon: Video,
@@ -28,10 +28,10 @@ const expeditionDetails = [
 ];
 
 const fundingBreakdown = [
-  { item: "Edmonton Arts Council (applied & pending)", amount: "TBD" },
-  { item: "Alberta Foundation for the Arts (applied & pending)", amount: "TBD" },
-  { item: "Canada Council for the Arts (applied & pending)", amount: "TBD" },
-  { item: "Community Fundraising (individuals, sponsors)", amount: "$50,000+" }
+  { item: "Edmonton Arts Council (applied & pending)", amount: "$25,000" },
+  { item: "Alberta Foundation for the Arts (due Sept 2025)", amount: "$18,000" },
+  { item: "Canada Council for the Arts (in-process)", amount: "TBD" },
+  { item: "Community Fundraising (individuals, sponsors)", amount: "$50,000" }
 ];
 
 export default function Expedition() {
