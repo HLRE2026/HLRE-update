@@ -3,18 +3,21 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+      },
       colors: {
         primary: {
-          50: '#f6f7f4',
-          100: '#e9ede4',
-          200: '#d3dcc8',
-          300: '#b4c3a4',
-          400: '#95aa81',
-          500: '#7a9164', // Base sage green
-          600: '#5f7349',
-          700: '#4a5a3b',
-          800: '#3d4831',
-          900: '#2c3423',
+          50: '#ecfdf5',
+          100: '#d1fae5',
+          200: '#a7f3d0',
+          300: '#6ee7b7',
+          400: '#34d399',
+          500: '#10b981', // Emerald base
+          600: '#059669',
+          700: '#047857',
+          800: '#065f46',
+          900: '#064e3b',
         },
         secondary: {
           50: '#f8f7f4',

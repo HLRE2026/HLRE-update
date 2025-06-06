@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import hlreLogo from '../../assets/logo.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Header() {
           <div className="flex items-center">
             <Link to="/">
               <img 
-                src="https://stackblitz.com/storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd2ZiRXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--4039ce8c0866340ac0ce93e88bfbaddb87594fad/logo.png"
+                src={hlreLogo}
                 alt="HLRE Logo"
                 className="h-12 w-auto"
               />

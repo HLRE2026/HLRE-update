@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary-900 text-gray-300">
+    <footer className="bg-primary-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About HLRE */}
@@ -38,8 +38,8 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
                 <div className="flex flex-col">
-                  <span>5407 92 b Ave</span>
-                  <span>Edmonton, Alberta T5J 2B2</span>
+                  <span>#1107, 9918-101 St.</span>
+                  <span>Edmonton</span>
                 </div>
               </div>
               <div className="flex space-x-4 pt-2">

@@ -1,5 +1,3 @@
-import { YouTubeEmbed } from '../components/YouTubeEmbed';
-
 const books = [
   {
     title: "Hope Love & Resilience Expedition",
@@ -95,21 +93,6 @@ export default function Resources() {
   return (
     <div className="pt-20">
       <div className="container mx-auto px-4 py-12">
-        {/* Project Pitch Video */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Project Overview</h2>
-          <div className="max-w-[1200px] mx-auto">
-            <div className="aspect-w-16 aspect-h-9 mb-8">
-              <iframe
-                src="https://player.vimeo.com/video/1026632300?badge=0&autopause=0&player_id=0&app_id=58479"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                className="w-full h-[600px] rounded-lg"
-                title="HLRE - Hope, Love and Resilience Documentary"
-              />
-            </div>
-          </div>
-        </section>
-
         {/* Books Section */}
         <section className="mb-16 bg-gray-50 py-12 rounded-xl">
           <div className="container mx-auto px-4">
