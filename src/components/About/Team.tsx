@@ -56,7 +56,7 @@ export default function Team() {
                   </div>
                   <div>
                     <h3 className="text-3xl font-bold text-gray-900 mb-1">{member.name}</h3>
-                    <p className="text-lg text-olive-600">{member.role}</p>
+                    <p className="text-lg text-emerald-600">{member.role}</p>
                     {member.email && (
                       <a
                         href={`mailto:${member.email}`}

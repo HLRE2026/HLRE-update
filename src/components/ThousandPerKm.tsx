@@ -1,0 +1,178 @@
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
+import { Bike, Heart, Users, TrendingUp } from 'lucide-react';
+
+export default function ThousandPerKm() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start end", "end start"]
+  });
+
+  const bikePosition = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+
+  return (
+    <section ref={containerRef} className="py-20 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Main Campaign Message */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+            $1,000 per Kilometer
+          </h2>
+          <p className="text-2xl md:text-3xl text-gray-700 font-medium mb-4">
+            Help Mark raise funds for every kilometer of his 300km journey
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            That's $300,000 total – with $200,000 going directly to mental health support after documentary costs
+          </p>
+        </motion.div>
+
+        {/* Visual Journey Bar */}
+        <div className="relative mb-16">
+          <div className="h-24 bg-gray-200 rounded-full overflow-hidden relative">
+            {/* Progress gradient */}
+            <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 via-blue-500 to-purple-500 opacity-20" />
+            
+            {/* Kilometer markers */}
+            <div className="absolute inset-0 flex items-center justify-between px-8">
+              <span className="text-white font-bold text-lg">0 km</span>
+              <span className="text-gray-700 font-bold text-lg">300 km</span>
+            </div>
+
+            {/* Animated bike */}
+            <motion.div
+              className="absolute top-1/2 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg"
+              style={{ left: bikePosition }}
+            >
+              <Bike className="w-8 h-8 text-emerald-600" />
+            </motion.div>
+          </div>
+          
+          {/* Milestones below */}
+          <div className="flex justify-between mt-4 text-sm text-gray-600">
+            <div className="text-center">
+              <div className="font-bold text-emerald-600">Banff</div>
+              <div>Start</div>
+            </div>
+            <div className="text-center">
+              <div className="font-bold text-blue-600">$150,000</div>
+              <div>Halfway</div>
+            </div>
+            <div className="text-center">
+              <div className="font-bold text-purple-600">Jasper</div>
+              <div>Finish</div>
+            </div>
+          </div>
+        </div>
+
+        {/* Impact Breakdown */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <TrendingUp className="w-8 h-8 text-emerald-600" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">$300,000</h3>
+            <p className="text-gray-600">Total Campaign Goal</p>
+            <p className="text-sm text-emerald-600 mt-2">300km × $1,000</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Heart className="w-8 h-8 text-blue-600" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">$200,000</h3>
+            <p className="text-gray-600">For Mental Health</p>
+            <p className="text-sm text-blue-600 mt-2">Direct to charities</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="bg-white rounded-2xl p-8 shadow-lg text-center"
+          >
+            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <Users className="w-8 h-8 text-purple-600" />
+            </div>
+            <h3 className="text-2xl font-bold mb-2">4,000+</h3>
+            <p className="text-gray-600">People Helped</p>
+            <p className="text-sm text-purple-600 mt-2">Through programs</p>
+          </motion.div>
+        </div>
+
+        {/* Potential Impact */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4 }}
+          className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white rounded-3xl p-8 md:p-12"
+        >
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-3xl font-bold mb-6">What $200,000 Can Do</h3>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold mb-2">2,000</div>
+                <p className="text-lg">Crisis intervention calls answered</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold mb-2">400</div>
+                <p className="text-lg">People receiving therapy sessions</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold mb-2">50</div>
+                <p className="text-lg">Support groups funded for a year</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold mb-2">∞</div>
+                <p className="text-lg">Lives touched by awareness</p>
+              </div>
+            </div>
+            <p className="mt-8 text-lg opacity-90">
+              Plus: All future documentary proceeds will be donated to continue this impact
+            </p>
+          </div>
+        </motion.div>
+
+        {/* Call to Action */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5 }}
+          className="text-center mt-12"
+        >
+          <button
+            onClick={() => {
+              const donateSection = document.getElementById('donate-section');
+              donateSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+            className="bg-emerald-600 text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg"
+          >
+            Sponsor a Kilometer Today
+          </button>
+          <p className="mt-4 text-gray-600">Every kilometer counts. Every dollar matters.</p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import hlreLogo from '../../assets/logo.png';
+import hlreLogo from '../../assets/hlre-logo.svg';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,34 +15,35 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-      <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
+      <nav className="container mx-auto px-8 py-6">
+        <div className="flex items-center justify-center relative">
+          {/* Logo - Positioned absolutely on the left */}
+          <div className="absolute left-8">
             <Link to="/">
               <img 
                 src={hlreLogo}
                 alt="HLRE Logo"
-                className="h-12 w-auto"
+                className="h-16 w-auto"
               />
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Navigation - Centered */}
+          <div className="hidden md:flex items-center space-x-10">
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 to={item.href}
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-emerald-600 transition-colors font-bold text-lg"
               >
                 {item.name}
               </Link>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button - Positioned absolutely on the right */}
           <button
-            className="md:hidden"
+            className="md:hidden absolute right-8"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -62,7 +63,7 @@ export default function Header() {
                   key={item.name}
                   to={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                  className="text-gray-700 hover:text-emerald-600 transition-colors font-bold text-lg"
                 >
                   {item.name}
                 </Link>

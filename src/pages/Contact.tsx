@@ -105,27 +105,6 @@ export default function Contact() {
                 </div>
               </div>
 
-              <div className="mt-8">
-                <h3 className="font-semibold mb-4">Follow Us</h3>
-                <div className="flex space-x-4">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61555182577107"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors"
-                  >
-                    Facebook
-                  </a>
-                  <a
-                    href="https://www.instagram.com/hlre2025/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-accent-600 text-white px-6 py-2 rounded-full hover:bg-accent-700 transition-colors"
-                  >
-                    Instagram
-                  </a>
-                </div>
-              </div>
             </div>
           </div>
         </div>

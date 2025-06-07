@@ -1,31 +1,79 @@
-import HeroSectionRedesign from '../components/HeroSectionRedesign';
-import WhyItMatters from '../components/WhyItMatters';
-import Story from '../components/Story';
-import Expedition from '../components/Expedition';
+import VideoHero from '../components/VideoHero';
+import ThousandPerKm from '../components/ThousandPerKm';
+import OurVision from '../components/OurVision';
+import FundraisingJourney from '../components/FundraisingJourney';
 import CharitySupportSection from '../components/CharitySupportSection';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
     <main>
-      <HeroSectionRedesign />
-      {/* Embedded Expedition Video */}
-      <section className="py-12 md:py-16 px-6">
+      {/* Full-screen Video Hero */}
+      <VideoHero />
+      
+      {/* Full Documentary Video Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        id="documentary-video"
+        className="py-12 md:py-16 px-6 bg-gray-50"
+      >
         <div className="container mx-auto max-w-5xl">
-          <div className="relative w-full rounded-xl shadow-lg overflow-hidden" style={{paddingTop: '56.25%'}}>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Watch the Full Story
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Join Mark on his 300km journey raising awareness for mental health across the Canadian Rockies
+            </p>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full rounded-xl shadow-2xl overflow-hidden"
+            style={{ paddingTop: '56.25%' }}
+          >
             <iframe
               src="https://player.vimeo.com/video/1026632300?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
               allowFullScreen
-              title="HLRE – Project Promo Video"
+              title="HLRE – Full Documentary"
               className="absolute inset-0 w-full h-full"
             />
-          </div>
+          </motion.div>
         </div>
-      </section>
-      <CharitySupportSection />
-      <WhyItMatters />
-      <Story />
-      <Expedition />
+      </motion.section>
+
+      {/* $1,000 per Kilometer Campaign */}
+      <ThousandPerKm />
+
+      {/* Our Vision - What Your Support Will Achieve */}
+      <OurVision />
+
+      {/* Fundraising Journey Map */}
+      <FundraisingJourney />
+
+      {/* Charity Partners - Mental Health Focus */}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        id="donate-section"
+      >
+        <CharitySupportSection />
+      </motion.div>
     </main>
   );
 }

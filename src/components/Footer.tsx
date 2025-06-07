@@ -1,16 +1,17 @@
-import { Heart, Mail, Phone, MapPin, Facebook, Instagram } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-900 text-white">
+    <footer className="bg-emerald-900 text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* About HLRE */}
           <div>
-            <Link to="/" className="flex items-center space-x-2 mb-4">
-              <Heart className="h-8 w-8 text-primary-400 fill-current" />
-              <span className="text-2xl font-bold text-white">HLRE</span>
+            <Link to="/" className="block mb-4">
+              <div className="inline-block">
+                <h2 className="text-5xl font-bold text-white tracking-wider">HLRE</h2>
+              </div>
             </Link>
             <p className="text-sm">
               Empowering lives through hope, love, resilience, and the journey of recovery. 
@@ -41,26 +42,6 @@ export default function Footer() {
                   <span>#1107, 9918-101 St.</span>
                   <span>Edmonton</span>
                 </div>
-              </div>
-              <div className="flex space-x-4 pt-2">
-                <a 
-                  href="https://www.facebook.com/profile.php?id=61555182577107"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-primary-600 rounded-full hover:bg-primary-700 transition-colors"
-                  aria-label="Facebook"
-                >
-                  <Facebook className="h-5 w-5" />
-                </a>
-                <a 
-                  href="https://www.instagram.com/hlre2025/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 bg-accent-600 rounded-full hover:bg-accent-700 transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
               </div>
             </div>
           </div>
