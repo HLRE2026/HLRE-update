@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, VolumeX, Play, Pause } from 'lucide-react';
 import { Button } from './ui/button';
+import heroVideo from '../../assets/hero-video.mp4';
+import fallbackImage from '../../assets/HL&R Expedition.jpg';
 
 const VideoHero = () => {
   const [isMuted, setIsMuted] = useState(true);
@@ -46,12 +48,12 @@ const VideoHero = () => {
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source 
-            src="/assets/hero-video.mp4" 
+            src={heroVideo} 
             type="video/mp4" 
           />
           {/* Fallback for browsers that don't support video */}
           <img 
-            src="/assets/HL&R Expedition.jpg" 
+            src={fallbackImage} 
             alt="Rocky Mountains" 
             className="h-full w-full object-cover"
           />
