@@ -14,7 +14,7 @@ const VideoHero = () => {
   const headlines = [
     {
       top: "300km for Mental Health",
-      bottom: "Supporting CMHA & GlenRose Foundation"
+      bottom: "Supporting CMHA & Glenrose Foundation"
     },
     {
       top: "Breaking the Silence",
