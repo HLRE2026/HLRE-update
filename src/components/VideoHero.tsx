@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, VolumeX, Play, Pause } from 'lucide-react';
 import { Button } from './ui/button';
-import heroVideo from '../../assets/hero-video.mp4';
 import fallbackImage from '../../assets/HL&R Expedition.jpg';
 
 const VideoHero = () => {
@@ -33,7 +32,7 @@ const VideoHero = () => {
       setCurrentHeadline((prev) => (prev + 1) % headlines.length);
     }, 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [headlines.length]);
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
@@ -48,7 +47,7 @@ const VideoHero = () => {
           onLoadedData={() => setVideoLoaded(true)}
         >
           <source 
-            src={heroVideo} 
+            src="/hero-video.mp4" 
             type="video/mp4" 
           />
           {/* Fallback for browsers that don't support video */}
