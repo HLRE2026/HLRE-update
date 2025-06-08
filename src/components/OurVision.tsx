@@ -75,24 +75,24 @@ export default function OurVision() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-20 bg-gradient-to-r from-emerald-600 to-blue-600 text-white rounded-3xl p-8 md:p-12"
+          className="mt-20"
         >
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-6">
               The Journey Ahead
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-              <div>
-                <div className="text-4xl font-bold mb-2">300km</div>
-                <p className="text-emerald-100">Through the Canadian Rockies</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
+                <div className="text-4xl font-bold mb-2 text-emerald-600">300km</div>
+                <p className="text-gray-600">Through the Canadian Rockies</p>
               </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">7 Days</div>
-                <p className="text-emerald-100">Of filming in September 2025</p>
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
+                <div className="text-4xl font-bold mb-2 text-blue-600">7 Days</div>
+                <p className="text-gray-600">Of filming in September 2025</p>
               </div>
-              <div>
-                <div className="text-4xl font-bold mb-2">∞ Lives</div>
-                <p className="text-emerald-100">Touched by this story</p>
+              <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
+                <div className="text-4xl font-bold mb-2 text-purple-600">∞ Lives</div>
+                <p className="text-gray-600">Touched by this story</p>
               </div>
             </div>
           </div>

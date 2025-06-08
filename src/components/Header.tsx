@@ -15,15 +15,15 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-      <nav className="container mx-auto px-8 py-6">
+      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
         <div className="flex items-center justify-center relative">
           {/* Logo - Positioned absolutely on the left */}
-          <div className="absolute left-8">
+          <div className="absolute left-0 sm:left-2 lg:left-8">
             <Link to="/">
               <img 
                 src={hlreLogo}
                 alt="HLRE Logo"
-                className="h-16 w-auto"
+                className="h-12 sm:h-14 lg:h-16 w-auto"
               />
             </Link>
           </div>
@@ -43,7 +43,7 @@ export default function Header() {
 
           {/* Mobile Menu Button - Positioned absolutely on the right */}
           <button
-            className="md:hidden absolute right-8"
+            className="md:hidden absolute right-0 sm:right-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (

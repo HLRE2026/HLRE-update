@@ -1,7 +1,6 @@
 import VideoHero from '../components/VideoHero';
 import ThousandPerKm from '../components/ThousandPerKm';
 import OurVision from '../components/OurVision';
-import FundraisingJourney from '../components/FundraisingJourney';
 import CharitySupportSection from '../components/CharitySupportSection';
 import { motion } from 'framer-motion';
 
@@ -60,9 +59,6 @@ export default function Home() {
 
       {/* Our Vision - What Your Support Will Achieve */}
       <OurVision />
-
-      {/* Fundraising Journey Map */}
-      <FundraisingJourney />
 
       {/* Charity Partners - Mental Health Focus */}
       <motion.div

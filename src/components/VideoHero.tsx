@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, VolumeX, Play, Pause } from 'lucide-react';
 import { Button } from './ui/button';
@@ -8,6 +8,8 @@ const VideoHero = () => {
   const [isMuted, setIsMuted] = useState(true);
   const [isPlaying, setIsPlaying] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoError, setVideoError] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   // Headlines that cycle through
   const headlines = [
@@ -34,29 +36,75 @@ const VideoHero = () => {
     return () => clearInterval(interval);
   }, [headlines.length]);
 
+  // Handle play/pause functionality
+  useEffect(() => {
+    if (videoRef.current) {
+      if (isPlaying) {
+        videoRef.current.play().catch((error) => {
+          console.error('Video play failed:', error);
+          setVideoError(true);
+        });
+      } else {
+        videoRef.current.pause();
+      }
+    }
+  }, [isPlaying]);
+
+  // Attempt to play video on mobile after user interaction
+  useEffect(() => {
+    const handleFirstInteraction = () => {
+      if (videoRef.current && !videoLoaded) {
+        videoRef.current.play().catch((error) => {
+          console.error('Video autoplay failed:', error);
+          setVideoError(true);
+        });
+      }
+      // Remove listeners after first interaction
+      document.removeEventListener('touchstart', handleFirstInteraction);
+      document.removeEventListener('click', handleFirstInteraction);
+    };
+
+    // Add listeners for first user interaction
+    document.addEventListener('touchstart', handleFirstInteraction);
+    document.addEventListener('click', handleFirstInteraction);
+
+    return () => {
+      document.removeEventListener('touchstart', handleFirstInteraction);
+      document.removeEventListener('click', handleFirstInteraction);
+    };
+  }, [videoLoaded]);
+
   return (
     <div className="relative h-screen w-full overflow-hidden">
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted={isMuted}
-          playsInline
-          className="h-full w-full object-cover blur-sm"
-          onLoadedData={() => setVideoLoaded(true)}
-        >
-          <source 
-            src="/hero-video.mp4" 
-            type="video/mp4" 
-          />
-          {/* Fallback for browsers that don't support video */}
+        {!videoError ? (
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            poster={fallbackImage}
+            className="h-full w-full object-cover blur-sm"
+            onLoadedData={() => setVideoLoaded(true)}
+            onError={() => setVideoError(true)}
+          >
+            <source 
+              src="/hero-video.mp4" 
+              type="video/mp4" 
+            />
+            {/* Fallback text for accessibility */}
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          /* Fallback image if video fails to load */
           <img 
             src={fallbackImage} 
             alt="Rocky Mountains" 
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover blur-sm"
           />
-        </video>
+        )}
         
         {/* Video Overlay for better text visibility */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
@@ -91,8 +139,8 @@ const VideoHero = () => {
           className="flex flex-col gap-4 sm:flex-row"
         >
           <Button 
-            size="lg" 
-            className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-6 text-lg"
+            size="md"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white"
             onClick={() => {
               const videoSection = document.getElementById('documentary-video');
               videoSection?.scrollIntoView({ behavior: 'smooth' });
@@ -101,9 +149,9 @@ const VideoHero = () => {
             Watch the Story
           </Button>
           <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg"
+            size="md"
+            variant="outline"
+            className="border-white text-white hover:bg-white hover:text-black"
             onClick={() => {
               const donateSection = document.getElementById('donate-section');
               donateSection?.scrollIntoView({ behavior: 'smooth' });
@@ -143,8 +191,8 @@ const VideoHero = () => {
         </motion.div>
       </div>
 
-      {/* Video Controls */}
-      {videoLoaded && (
+      {/* Video Controls - Only show if video loaded successfully */}
+      {videoLoaded && !videoError && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -159,7 +207,12 @@ const VideoHero = () => {
             {isPlaying ? <Pause size={20} /> : <Play size={20} />}
           </button>
           <button
-            onClick={() => setIsMuted(!isMuted)}
+            onClick={() => {
+              if (videoRef.current) {
+                videoRef.current.muted = !videoRef.current.muted;
+                setIsMuted(!isMuted);
+              }
+            }}
             className="rounded-full bg-white/20 p-3 backdrop-blur-sm transition-colors hover:bg-white/30"
             aria-label={isMuted ? "Unmute video" : "Mute video"}
           >

@@ -22,7 +22,7 @@ export default function ThousandPerKm() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 text-emerald-600">
             $1,000 per Kilometer
           </h2>
           <p className="text-2xl md:text-3xl text-gray-700 font-medium mb-4">
@@ -118,40 +118,6 @@ export default function ThousandPerKm() {
             <p className="text-sm text-purple-600 mt-2">Through programs</p>
           </motion.div>
         </div>
-
-        {/* Potential Impact */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="bg-gradient-to-r from-emerald-600 to-blue-600 text-white rounded-3xl p-8 md:p-12"
-        >
-          <div className="max-w-4xl mx-auto text-center">
-            <h3 className="text-3xl font-bold mb-6">What $200,000 Can Do</h3>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">2,000</div>
-                <p className="text-lg">Crisis intervention calls answered</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">400</div>
-                <p className="text-lg">People receiving therapy sessions</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">50</div>
-                <p className="text-lg">Support groups funded for a year</p>
-              </div>
-              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <div className="text-4xl font-bold mb-2">∞</div>
-                <p className="text-lg">Lives touched by awareness</p>
-              </div>
-            </div>
-            <p className="mt-8 text-lg opacity-90">
-              Plus: All future documentary proceeds will be donated to continue this impact
-            </p>
-          </div>
-        </motion.div>
 
         {/* Call to Action */}
         <motion.div
