@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
-import { MapPin, FileText, Users, Camera, Rocket, DollarSign, Heart } from 'lucide-react';
+import { FileText, Users, Camera, Rocket, DollarSign, Heart } from 'lucide-react';
 
 const FundraisingJourney = () => {
   const containerRef = useRef<HTMLDivElement>(null);

@@ -32,7 +32,7 @@ export default function Contact() {
                     type="text"
                     id="name"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
@@ -45,7 +45,7 @@ export default function Contact() {
                     type="email"
                     id="email"
                     required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   />
@@ -58,14 +58,14 @@ export default function Contact() {
                     id="message"
                     required
                     rows={4}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-primary-600 text-white px-6 py-3 rounded-lg hover:bg-primary-700 transition-colors font-medium"
+                  className="w-full bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition-colors font-medium"
                 >
                   Send Message
                 </button>
@@ -78,7 +78,7 @@ export default function Contact() {
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <Mail className="w-6 h-6 text-primary-600 mt-1" />
+                  <Mail className="w-6 h-6 text-emerald-600 mt-1" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
                     <p className="text-gray-600">info@hlre2025.com</p>
@@ -86,16 +86,16 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <Phone className="w-6 h-6 text-primary-600 mt-1" />
+                  <Phone className="w-6 h-6 text-emerald-600 mt-1" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">Producer: 780-554-5576</p>
-                    <p className="text-gray-600">Director: 780-909-2763</p>
+                    <p className="text-gray-600">Matt Luca (Producer): 780-554-5576</p>
+                    <p className="text-gray-600">Mark Ivančič (Director): 780-909-2763</p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <MapPin className="w-6 h-6 text-primary-600 mt-1" />
+                  <MapPin className="w-6 h-6 text-emerald-600 mt-1" />
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-gray-600">

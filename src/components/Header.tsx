@@ -15,10 +15,10 @@ export default function Header() {
 
   return (
     <header className="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-        <div className="flex items-center justify-center relative">
-          {/* Logo - Positioned absolutely on the left */}
-          <div className="absolute left-0 sm:left-2 lg:left-8">
+      <nav className="w-full px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+        <div className="flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex-shrink-0">
             <Link to="/">
               <img 
                 src={hlreLogo}
@@ -28,8 +28,8 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex items-center space-x-10">
+          {/* Desktop Navigation - Absolutely Centered */}
+          <div className="hidden md:flex items-center space-x-10 absolute left-1/2 transform -translate-x-1/2">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -41,17 +41,18 @@ export default function Header() {
             ))}
           </div>
 
-          {/* Mobile Menu Button - Positioned absolutely on the right */}
-          <button
-            className="md:hidden absolute right-0 sm:right-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            {isMenuOpen ? (
-              <X className="h-6 w-6 text-gray-700" />
-            ) : (
-              <Menu className="h-6 w-6 text-gray-700" />
-            )}
-          </button>
+          {/* Mobile Menu Button */}
+          <div className="flex-shrink-0 md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              {isMenuOpen ? (
+                <X className="h-6 w-6 text-gray-700" />
+              ) : (
+                <Menu className="h-6 w-6 text-gray-700" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}

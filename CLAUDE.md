@@ -24,27 +24,46 @@ npm run lint     # Run ESLint
 
 ### Tech Stack
 - **React 18.3** with TypeScript
-- **Vite** for build tooling
-- **Tailwind CSS** for styling with custom theme colors:
-  - Primary: Emerald (green-600/700)
-  - Secondary: Earth brown (#8B4513)
-  - Accent: Mountain lake blue (#006D77)
-- **React Router** for client-side routing
-- **Framer Motion** for animations
+- **Vite 6.3** for build tooling with video asset support (mp4 files configured)
+- **Tailwind CSS** for styling with custom theme colors defined in tailwind.config.js:
+  - Primary: Emerald palette (base: #10b981)
+  - Secondary: Earth brown palette (base: #8b6f4b)
+  - Accent: Mountain lake blue palette (base: #3d8ba9)
+- **React Router 6.22** for client-side routing
+- **Framer Motion 10.16** for animations
 - **Lucide React** for icons
+- **Stagewise Toolbar** (dev dependency) for development tools
 
 ### Project Structure
-- `/src/pages/` - Route-level page components (Home, About, Resources, Contact)
-- `/src/components/` - Reusable components organized by feature
+- `/src/App.tsx` - Main router configuration with 4 routes (Home, About, Resources, Contact)
+- `/src/pages/` - Route-level page components
+- `/src/components/` - Feature components including homepage sections:
+  - VideoHero, CharitySupportSection, ThousandPerKm (actively modified)
+  - ExpeditionVideoSection, WhyItMatters, OurVision, FundraisingJourney
+  - AnimatedJourney, ImpactCounter, FeaturedVideo
 - `/src/components/ui/` - Base UI components following shadcn/ui pattern
-- `/src/lib/utils.ts` - Utility functions including `cn()` for className merging
+- `/src/lib/utils.ts` - Contains `cn()` helper for className merging
 - `/src/assets/` - Static images and team photos
+- `/public/` - Public assets served directly
 
-### Key Patterns
-1. **Component Composition**: Components are built using smaller, reusable pieces from the ui/ directory
-2. **Styling**: Use Tailwind utility classes with the `cn()` helper for conditional styling
-3. **TypeScript**: Strict mode enabled - always define proper types for props and state
-4. **Routing**: All routes defined in App.tsx using React Router
+### Key Patterns & Conventions
+1. **Component Composition**: Build using smaller pieces from ui/ directory
+2. **Styling**: Use Tailwind utilities with `cn()` helper for conditional classes
+3. **TypeScript**: Strict mode enabled in tsconfig.app.json - define all prop types
+4. **Routing**: Centralized in App.tsx using React Router's BrowserRouter
+5. **Font**: Inter as primary sans-serif font
+6. **Video Support**: MP4 files are configured as assets in Vite
 
-### Current Development Focus
-The project is undergoing a homepage redesign with new sections being added (CharitySupportSection, ExpeditionVideoSection, etc.) as indicated by the git status. A homepage-audit-and-recommendations.md file contains detailed improvement suggestions.
+### Current Development Context
+The project has active changes to homepage components (Header, VideoHero, ThousandPerKm) as part of a redesign effort. The homepage-audit-and-recommendations.md contains detailed improvement plans including:
+- Hero section enhancement with video/motion graphics
+- Featured video placement
+- Impact transparency sections
+- Community engagement features
+
+### Byterover Integration
+The project includes Byterover MCP tools (see AGENTS.md) for knowledge management and planning workflows. These tools help with:
+- Creating and updating project handbooks
+- Managing implementation plans with todo tracking
+- Storing and retrieving project knowledge
+- Module documentation and updates

@@ -60,7 +60,7 @@ export default function Team() {
                     {member.email && (
                       <a
                         href={`mailto:${member.email}`}
-                        className="flex items-center space-x-2 text-primary-600 hover:text-primary-700 transition-colors mt-4"
+                        className="flex items-center space-x-2 text-emerald-600 hover:text-emerald-700 transition-colors mt-4"
                       >
                         <Mail size={16} />
                         <span className="text-sm">{member.email}</span>

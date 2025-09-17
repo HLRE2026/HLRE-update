@@ -151,7 +151,7 @@ const VideoHero = () => {
           <Button 
             size="md"
             variant="outline"
-            className="border-white text-white hover:bg-white hover:text-black"
+            className="bg-white border-white text-emerald-700 hover:bg-emerald-50 hover:text-emerald-800 font-bold shadow-lg shadow-emerald-500/30"
             onClick={() => {
               const donateSection = document.getElementById('donate-section');
               donateSection?.scrollIntoView({ behavior: 'smooth' });

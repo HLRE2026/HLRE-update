@@ -1,15 +1,17 @@
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Bike, Heart, Users, TrendingUp } from 'lucide-react';
 
 export default function ThousandPerKm() {
   const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start end", "end start"]
-  });
-
-  const bikePosition = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+  
+  // Current progress - should be updated based on actual fundraising data
+  const currentAmount = 0; // TODO(stagewise): Replace with actual fundraising amount from backend
+  const totalGoal = 300000;
+  const progressPercentage = Math.min((currentAmount / totalGoal) * 100, 100);
+  
+  // Position bike based on actual progress, not scroll
+  const bikePosition = `${progressPercentage}%`;
 
   return (
     <section ref={containerRef} className="py-20 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
@@ -45,9 +47,12 @@ export default function ThousandPerKm() {
               <span className="text-gray-700 font-bold text-lg">300 km</span>
             </div>
 
-            {/* Animated bike */}
+            {/* Progress bike - positioned based on fundraising progress */}
             <motion.div
-              className="absolute top-1/2 -translate-y-1/2 bg-white rounded-full p-3 shadow-lg"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 bg-white rounded-full p-3 shadow-lg"
               style={{ left: bikePosition }}
             >
               <Bike className="w-8 h-8 text-emerald-600" />

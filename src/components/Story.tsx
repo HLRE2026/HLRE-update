@@ -11,8 +11,11 @@ export default function Story() {
             <p className="text-gray-600 mb-6 leading-relaxed">
               Determined to overcome these obstacles, Mark discovered the profound impact of hope, love, and resilience. This newfound purpose became the foundation of the Hope, Love, & Resilience Expedition (HLRE)—a mission to inspire and empower others facing life's toughest challenges. Through the HLRE, Mark shares his story of recovery, strength, and courage, reminding us all that no matter the hardship, there's always a way forward.
             </p>
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 mb-6 leading-relaxed">
               Deeply rooted in the Spruce Grove and Stony Plain communities, Mark's impact as a teacher and musician has touched countless lives. Through his classroom teaching in Stony Plain and his musical performances, he has always found ways to inspire and connect with others. Now, he aspires to expand his reach through motivational speaking engagements, sharing his story of recovery and resilience with a broader audience. His vision is to combine his authored works with powerful presentations, showing others that every challenge can become a stepping stone to something greater.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              <strong>Inspiring Educator:</strong> Mark has delivered bullying prevention presentations to multiple schools across his school division and beyond, reaching hundreds of students with messages of empathy, respect, and resilience. His experience in addressing youth challenges, combined with his personal journey of overcoming adversity, makes him a powerful voice for positive change in educational communities.
             </p>
           </div>
           <div className="relative">
@@ -21,7 +24,7 @@ export default function Story() {
               alt="Mark Ivancic"
               className="rounded-lg shadow-xl w-full h-[500px] object-cover"
             />
-            <div className="absolute inset-0 bg-primary-600/10 rounded-lg" />
+            <div className="absolute inset-0 bg-emerald-600/10 rounded-lg" />
           </div>
         </div>
       </div>

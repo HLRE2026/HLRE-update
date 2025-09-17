@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
-import { DollarSign, FileText, Users, Camera } from 'lucide-react';
+import { DollarSign, FileText, Camera } from 'lucide-react';
 
 const fundingBreakdown = [
-  { item: "Edmonton Arts Council", amount: "$25,000", status: "Applied & Pending" },
-  { item: "Alberta Foundation for the Arts", amount: "$18,000", status: "Due Sept 2025" },
-  { item: "Canada Council for the Arts", amount: "$15,000", status: "In Process" },
-  { item: "Corporate Sponsorships", amount: "$25,000", status: "Ongoing" },
-  { item: "Individual Donations", amount: "$17,000", status: "Active" }
+  { item: "Corporate Sponsorships", amount: "", status: "Multiple tiers available" },
+  { item: "Individual Donations", amount: "", status: "Every kilometer counts" },
+  { item: "Grants", amount: "", status: "Optional funding source" }
 ];
 
 const allocationBreakdown = [
@@ -14,7 +12,7 @@ const allocationBreakdown = [
   { category: "Production (Filming)", amount: "$35,000", percentage: 35 },
   { category: "Post-Production", amount: "$20,000", percentage: 20 },
   { category: "Equipment & Travel", amount: "$15,000", percentage: 15 },
-  { category: "Marketing & Distribution", amount: "$10,000", percentage: 10 },
+  { category: "Community Engagement", amount: "$10,000", percentage: 10 },
   { category: "Contingency", amount: "$5,000", percentage: 5 }
 ];
 
@@ -47,7 +45,7 @@ export default function FinancialAllocation() {
               <div className="p-3 bg-emerald-100 rounded-full">
                 <DollarSign className="w-6 h-6 text-emerald-600" />
               </div>
-              <h3 className="text-2xl font-bold">Documentary Funding Sources</h3>
+              <h3 className="text-2xl font-bold">Hope, Love & Resilience Expedition Funding Sources</h3>
             </div>
             
             <div className="space-y-4">
@@ -64,14 +62,31 @@ export default function FinancialAllocation() {
                     <p className="font-semibold text-gray-900">{item.item}</p>
                     <p className="text-sm text-gray-500">{item.status}</p>
                   </div>
-                  <span className="font-bold text-emerald-600 text-lg">{item.amount}</span>
+                  {item.amount && <span className="font-bold text-emerald-600 text-lg">{item.amount}</span>}
                 </motion.div>
               ))}
               
-              <div className="pt-4 mt-2">
-                <div className="flex justify-between items-center">
-                  <span className="text-xl font-bold text-gray-900">Total Budget</span>
-                  <span className="text-2xl font-bold text-emerald-600">$100,000</span>
+              <div className="pt-4 mt-2 space-y-4">
+                <div className="border-t pt-4">
+                  <p className="font-semibold text-gray-700 mb-2">Sponsorship Tiers:</p>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between">
+                      <span>$1,000 × 100</span>
+                      <span className="text-gray-600">= $100,000</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>$5,000 × 10</span>
+                      <span className="text-gray-600">= $50,000</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span>$15,000 × 5</span>
+                      <span className="text-gray-600">= $75,000</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex justify-between items-center border-t pt-4">
+                  <span className="text-xl font-bold text-gray-900">Total Campaign Goal</span>
+                  <span className="text-2xl font-bold text-emerald-600">$300,000</span>
                 </div>
               </div>
             </div>
@@ -89,7 +104,7 @@ export default function FinancialAllocation() {
               <div className="p-3 bg-white/20 rounded-full">
                 <FileText className="w-6 h-6 text-white" />
               </div>
-              <h3 className="text-2xl font-bold">Budget Allocation</h3>
+              <h3 className="text-2xl font-bold">Documentary Budget Allocation</h3>
             </div>
             
             <div className="space-y-4">

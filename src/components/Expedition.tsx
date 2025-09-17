@@ -51,8 +51,8 @@ export default function Expedition() {
             const Icon = detail.icon;
             return (
               <div key={detail.title} className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
-                <div className="flex items-center justify-center w-12 h-12 bg-primary-100 rounded-full mb-6 mx-auto">
-                  <Icon className="h-6 w-6 text-primary-600" />
+                <div className="flex items-center justify-center w-12 h-12 bg-emerald-100 rounded-full mb-6 mx-auto">
+                  <Icon className="h-6 w-6 text-emerald-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-center mb-2">{detail.value}</h3>
                 <h4 className="text-lg font-semibold text-gray-800 text-center mb-2">{detail.title}</h4>

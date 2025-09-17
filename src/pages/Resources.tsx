@@ -112,7 +112,7 @@ export default function Resources() {
                       href={book.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-block bg-primary-600 text-white px-6 py-2 rounded-full hover:bg-primary-700 transition-colors"
+                      className="inline-block bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors"
                     >
                       View on Amazon
                     </a>
@@ -128,7 +128,7 @@ export default function Resources() {
           <h2 className="text-3xl font-bold mb-8">Recovery Journey</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {recoveryVideos.map((video) => (
-              <div key={video.title} className="bg-white rounded-lg shadow-lg p-6 border border-primary-100">
+              <div key={video.title} className="bg-white rounded-lg shadow-lg p-6 border border-emerald-100">
                 <div className="aspect-w-16 aspect-h-9 mb-4">
                   <iframe
                     src={`https://www.youtube.com/embed/${video.embedId}`}

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { MapPin, Heart, Users, Target } from 'lucide-react';
 
@@ -119,13 +119,6 @@ const AnimatedJourney = () => {
 
           {/* Milestones */}
           {milestones.map((milestone, index) => {
-            const progress = index / (milestones.length - 1);
-            const opacity = useTransform(
-              scrollYProgress,
-              [Math.max(0, progress - 0.2), progress + 0.1],
-              [0, 1]
-            );
-
             return (
               <motion.div
                 key={milestone.km}
@@ -141,7 +134,10 @@ const AnimatedJourney = () => {
                 transition={{ delay: index * 0.2, type: "spring" }}
               >
                 <motion.div
-                  style={{ opacity }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 }}
                   whileHover={{ scale: 1.1 }}
                   className="relative group cursor-pointer"
                 >
