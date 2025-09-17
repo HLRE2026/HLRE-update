@@ -6,7 +6,7 @@ export default function ThousandPerKm() {
   const containerRef = useRef<HTMLDivElement>(null);
   
   // Current progress - should be updated based on actual fundraising data
-  const currentAmount = 0; // TODO(stagewise): Replace with actual fundraising amount from backend
+  const currentAmount = 0; // TODO: Replace with actual fundraising amount from backend
   const totalGoal = 300000;
   const progressPercentage = Math.min((currentAmount / totalGoal) * 100, 100);
   
@@ -30,9 +30,14 @@ export default function ThousandPerKm() {
           <p className="text-2xl md:text-3xl text-gray-700 font-medium mb-4">
             Help Mark raise funds for every kilometer of his 300km journey
           </p>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">
             That's $300,000 total – with $200,000 going directly to mental health support after documentary costs
           </p>
+          <div className="bg-emerald-50 rounded-xl px-6 py-3 max-w-2xl mx-auto">
+            <p className="text-emerald-700 font-medium">
+              <strong>Individuals:</strong> Support via Indiegogo (any amount) • <strong>Businesses:</strong> Direct sponsorship (min. $1,000)
+            </p>
+          </div>
         </motion.div>
 
         {/* Visual Journey Bar */}
@@ -139,7 +144,7 @@ export default function ThousandPerKm() {
             }}
             className="bg-emerald-600 text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg"
           >
-            Sponsor a Kilometer Today
+            Support the Journey Today
           </button>
           <p className="mt-4 text-gray-600">Every kilometer counts. Every dollar matters.</p>
         </motion.div>

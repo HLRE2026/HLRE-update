@@ -2,6 +2,7 @@ import VideoHero from '../components/VideoHero';
 import ThousandPerKm from '../components/ThousandPerKm';
 import OurVision from '../components/OurVision';
 import CharitySupportSection from '../components/CharitySupportSection';
+import SponsorshipTiers from '../components/SponsorshipTiers';
 import { motion } from 'framer-motion';
 
 export default function Home() {
@@ -56,6 +57,9 @@ export default function Home() {
 
       {/* $1,000 per Kilometer Campaign */}
       <ThousandPerKm />
+
+      {/* Sponsorship Tiers - Benefits for Different Levels */}
+      <SponsorshipTiers />
 
       {/* Our Vision - What Your Support Will Achieve */}
       <OurVision />

@@ -1,3 +1,7 @@
+import { useState, useEffect } from 'react';
+import VideoCard from '../components/VideoCard';
+import VideoSkeleton from '../components/VideoSkeleton';
+
 const books = [
   {
     title: "Hope Love & Resilience Expedition",
@@ -90,6 +94,16 @@ const musicVideos = [
 ];
 
 export default function Resources() {
+  const [videosLoading, setVideosLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate loading delay to show skeletons briefly
+    const timer = setTimeout(() => {
+      setVideosLoading(false);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="pt-20">
       <div className="container mx-auto px-4 py-12">
@@ -127,20 +141,23 @@ export default function Resources() {
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8">Recovery Journey</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {recoveryVideos.map((video) => (
-              <div key={video.title} className="bg-white rounded-lg shadow-lg p-6 border border-emerald-100">
-                <div className="aspect-w-16 aspect-h-9 mb-4">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${video.embedId}`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    className="w-full h-[400px] rounded-lg"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mt-4 mb-2">{video.title}</h3>
-                <p className="text-gray-600">{video.description}</p>
-              </div>
-            ))}
+            {videosLoading ? (
+              <>
+                <VideoSkeleton />
+                <VideoSkeleton />
+                <VideoSkeleton />
+                <VideoSkeleton />
+              </>
+            ) : (
+              recoveryVideos.map((video) => (
+                <VideoCard
+                  key={video.title}
+                  title={video.title}
+                  embedId={video.embedId}
+                  description={video.description}
+                />
+              ))
+            )}
           </div>
         </section>
 
@@ -149,20 +166,21 @@ export default function Resources() {
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8">Musical Journey</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {musicVideos.map((video) => (
-                <div key={video.title} className="bg-white rounded-lg shadow-lg p-6 border border-secondary-100">
-                  <div className="aspect-w-16 aspect-h-9 mb-4">
-                    <iframe
-                      src={`https://www.youtube.com/embed/${video.embedId}`}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-[400px] rounded-lg"
-                    />
-                  </div>
-                  <h3 className="text-xl font-bold mt-4 mb-2">{video.title}</h3>
-                  <p className="text-gray-600">{video.description}</p>
-                </div>
-              ))}
+              {videosLoading ? (
+                <>
+                  <VideoSkeleton />
+                  <VideoSkeleton />
+                </>
+              ) : (
+                musicVideos.map((video) => (
+                  <VideoCard
+                    key={video.title}
+                    title={video.title}
+                    embedId={video.embedId}
+                    description={video.description}
+                  />
+                ))
+              )}
             </div>
           </div>
         </section>

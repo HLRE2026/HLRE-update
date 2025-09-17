@@ -79,24 +79,33 @@ const VideoHero = () => {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         {!videoError ? (
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            poster={fallbackImage}
-            className="h-full w-full object-cover blur-sm"
-            onLoadedData={() => setVideoLoaded(true)}
-            onError={() => setVideoError(true)}
-          >
-            <source 
-              src="/hero-video.mp4" 
-              type="video/mp4" 
-            />
-            {/* Fallback text for accessibility */}
-            Your browser does not support the video tag.
-          </video>
+          <>
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="h-full w-full object-cover blur-sm"
+              onLoadedData={() => setVideoLoaded(true)}
+              onError={() => setVideoError(true)}
+            >
+              <source 
+                src="/hero-video.mp4" 
+                type="video/mp4" 
+              />
+              {/* Fallback text for accessibility */}
+              Your browser does not support the video tag.
+            </video>
+            {/* Show a dark background while video loads instead of Mark's image */}
+            {!videoLoaded && (
+              <div className="absolute inset-0 bg-gradient-to-b from-emerald-900 to-emerald-800 flex items-center justify-center">
+                <div className="text-white text-center">
+                  <div className="animate-pulse text-lg">Loading video...</div>
+                </div>
+              </div>
+            )}
+          </>
         ) : (
           /* Fallback image if video fails to load */
           <img 

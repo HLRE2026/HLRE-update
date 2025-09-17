@@ -32,7 +32,6 @@ npm run lint     # Run ESLint
 - **React Router 6.22** for client-side routing
 - **Framer Motion 10.16** for animations
 - **Lucide React** for icons
-- **Stagewise Toolbar** (dev dependency) for development tools
 
 ### Project Structure
 - `/src/App.tsx` - Main router configuration with 4 routes (Home, About, Resources, Contact)
