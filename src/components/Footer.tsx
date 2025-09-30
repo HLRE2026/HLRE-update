@@ -30,10 +30,10 @@ export default function Footer() {
               <div className="flex flex-col space-y-2">
                 <div className="flex items-center space-x-2">
                   <Phone className="h-5 w-5" />
-                  <span>Producer: 780-554-5576</span>
+                  <span>Dan Adcock (Producer): 780-554-5576</span>
                 </div>
                 <div className="flex items-center space-x-2 pl-7">
-                  <span>Director: 780-909-2763</span>
+                  <span>Matt Dringenberg (Director): 780-909-2763</span>
                 </div>
               </div>
               <div className="flex items-start space-x-2">

@@ -41,7 +41,7 @@ export default function CharitySupportSection() {
             Making a Real Difference
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-            100% of Your Donations Support Mental Health
+            Your Donations Support Mental Health
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Every dollar you contribute goes directly to these incredible organizations, 

@@ -3,7 +3,7 @@ import { DollarSign, FileText, Camera } from 'lucide-react';
 import SponsorshipTable from '../SponsorshipTable';
 
 const fundingBreakdown = [
-  { item: "Corporate Sponsorships", amount: "", status: "Multiple tiers available" },
+  { item: "Corporate Sponsorships", amount: "", status: "Multiple tiers available & outlined below" },
   { item: "Individual Donations", amount: "", status: "Every kilometer counts" },
   { item: "Grants", amount: "", status: "Optional funding source" }
 ];

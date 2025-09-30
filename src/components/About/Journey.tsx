@@ -4,7 +4,7 @@ const timeline = [
   {
     year: "Pre-2018",
     title: "Inspiring Educator",
-    description: "As a junior high school teacher in Spruce Grove, Alberta, Mark empowered hundreds of youth with the motto 'anything is possible in life'. He led annual hiking trips to Jasper and hosted youth events in large auditoriums."
+    description: "As a junior high teacher in Stony Plain, Alberta, Mark empowered hundreds of youth with the motto 'anything is possible in life'. He led annual hiking trips to Jasper and hosted youth events in large auditoriums."
   },
   {
     year: "April 2018",

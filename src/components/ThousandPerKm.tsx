@@ -31,11 +31,11 @@ export default function ThousandPerKm() {
             Help Mark raise funds for every kilometer of his 300km journey
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">
-            That's $300,000 total – with $200,000 going directly to mental health support after documentary costs
+            That's $300,000 total – with $200,000 going directly to CMHA and Glenrose Foundation after documentary costs
           </p>
           <div className="bg-emerald-50 rounded-xl px-6 py-3 max-w-2xl mx-auto">
             <p className="text-emerald-700 font-medium">
-              <strong>Individuals:</strong> Support via Indiegogo (any amount) • <strong>Businesses:</strong> Direct sponsorship (min. $1,000)
+              <strong>Individuals:</strong> Support via Indiegogo (any amount) • <strong>Businesses:</strong> HLRE sponsorship (min. $1,000)
             </p>
           </div>
         </motion.div>
@@ -146,7 +146,7 @@ export default function ThousandPerKm() {
           >
             Support the Journey Today
           </button>
-          <p className="mt-4 text-gray-600">Every kilometer counts. Every dollar matters.</p>
+          <p className="mt-4 text-gray-600">Every kilometer counts. Every dollar helps.</p>
         </motion.div>
       </div>
     </section>

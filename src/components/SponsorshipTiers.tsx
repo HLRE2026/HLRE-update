@@ -201,7 +201,7 @@ export default function SponsorshipTiers() {
               </div>
               <h4 className="font-semibold mb-2">Documentary Exposure</h4>
               <p className="text-gray-600 text-sm">
-                Your brand featured in a professional documentary reaching thousands
+                Your brand featured in a professional documentary film reaching thousands
               </p>
             </div>
             

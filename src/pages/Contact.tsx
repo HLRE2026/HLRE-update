@@ -89,8 +89,8 @@ export default function Contact() {
                   <Phone className="w-6 h-6 text-emerald-600 mt-1" />
                   <div>
                     <h3 className="font-semibold">Phone</h3>
-                    <p className="text-gray-600">Matt Luca (Producer): 780-554-5576</p>
-                    <p className="text-gray-600">Mark Ivančič (Director): 780-909-2763</p>
+                    <p className="text-gray-600">Dan Adcock (Producer): 780-554-5576</p>
+                    <p className="text-gray-600">Matt Dringenberg (Director): 780-909-2763</p>
                   </div>
                 </div>
 

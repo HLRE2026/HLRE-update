@@ -53,8 +53,7 @@ export default function SponsorshipTable() {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
       <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 p-6 text-white">
-        <h3 className="text-2xl font-bold mb-2">Sponsorship Structure</h3>
-        <p className="text-emerald-100">Building our $300,000 goal together</p>
+        <h3 className="text-2xl font-bold mb-2">Sponsorship Structure - Reaching our $300,000 goal together</h3>
       </div>
       
       <div className="p-6">
