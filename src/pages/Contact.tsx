@@ -91,6 +91,7 @@ export default function Contact() {
                     <h3 className="font-semibold">Phone</h3>
                     <p className="text-gray-600">Dan Adcock (Producer): 780-554-5576</p>
                     <p className="text-gray-600">Matt Dringenberg (Director): 780-909-2763</p>
+                    <p className="text-gray-600">Jeremy Hamilton (Community Engagement): [Phone number needed]</p>
                   </div>
                 </div>
 

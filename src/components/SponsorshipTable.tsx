@@ -12,39 +12,30 @@ const sponsorshipLevels = [
     color: "bg-emerald-50 text-emerald-700"
   },
   {
-    tier: "Business Sponsors (Bronze)",
-    amount: "$1,000+",
-    quantity: "Multiple",
-    total: "Varies",
+    tier: "Bronze Tier Sponsors",
+    amount: "$1,000",
+    quantity: "× 100",
+    total: "$100,000",
     icon: Building2,
-    description: "Businesses making an impact (minimum $1,000)",
+    description: "Businesses making an impact",
     color: "bg-blue-50 text-blue-700"
   },
   {
-    tier: "Silver Business Partners",
+    tier: "Silver Tier Partners",
     amount: "$5,000",
     quantity: "× 10",
     total: "$50,000",
-    icon: Building2,
-    description: "Local businesses showing leadership",
-    color: "bg-blue-50 text-blue-700"
-  },
-  {
-    tier: "Corporate Champions",
-    amount: "$10,000",
-    quantity: "× 5",
-    total: "$50,000",
     icon: Star,
-    description: "Major sponsors driving change",
+    description: "Local businesses showing leadership",
     color: "bg-purple-50 text-purple-700"
   },
   {
-    tier: "Platinum Partners",
+    tier: "Gold Tier Partners",
     amount: "$15,000",
     quantity: "× 5",
     total: "$75,000",
     icon: Star,
-    description: "Premier partners leading the way",
+    description: "Major sponsors driving change",
     color: "bg-amber-50 text-amber-700"
   }
 ];

@@ -41,10 +41,10 @@ export default function CharitySupportSection() {
             Making a Real Difference
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-            Your Donations Support Mental Health
+            Every Donation Makes an Impact
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Every dollar you contribute goes directly to these incredible organizations, 
+            $200,000 of the $300,000 raised goes directly to these incredible organizations, 
             creating lasting impact in mental health support and stroke recovery programs across Canada.
           </p>
         </motion.div>
