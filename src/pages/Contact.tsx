@@ -100,7 +100,7 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-gray-600">
-                      #1107, 9918-101 St. Edmonton
+                      Project #1107, 9918-101 St. Edmonton, Alberta, Canada
                     </p>
                   </div>
                 </div>

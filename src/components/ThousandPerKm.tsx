@@ -31,7 +31,7 @@ export default function ThousandPerKm() {
             Help Mark raise funds for every kilometer of his 300km journey
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">
-            That's $300,000 total – with $200,000 going directly to CMHA and Glenrose Foundation after documentary costs
+            That's $300,000 total – with $200,000 going directly to Glenrose Foundation and CMHA after documentary costs
           </p>
           <div className="bg-emerald-50 rounded-xl px-6 py-3 max-w-2xl mx-auto">
             <p className="text-emerald-700 font-medium">

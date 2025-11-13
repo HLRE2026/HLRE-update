@@ -9,13 +9,14 @@ const VideoHero = () => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const [videoError, setVideoError] = useState(false);
+  const [isPaused, setIsPaused] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   // Headlines that cycle through
   const headlines = [
     {
       top: "300km for Mental Health",
-      bottom: "Supporting CMHA & Glenrose Foundation"
+      bottom: "Supporting Glenrose Foundation & CMHA"
     },
     {
       top: "Breaking the Silence",
@@ -40,10 +41,14 @@ const VideoHero = () => {
   useEffect(() => {
     if (videoRef.current) {
       if (isPlaying) {
-        videoRef.current.play().catch((error) => {
-          console.error('Video play failed:', error);
-          setVideoError(true);
-        });
+        const playPromise = videoRef.current.play();
+        if (playPromise !== undefined) {
+          playPromise.catch((error) => {
+            console.error('Video play failed:', error);
+            // Don't set error state immediately - video might still load
+            // Only set error if video fails to load entirely
+          });
+        }
       } else {
         videoRef.current.pause();
       }
@@ -86,9 +91,46 @@ const VideoHero = () => {
               loop
               muted
               playsInline
+              preload="auto"
               className="h-full w-full object-cover blur-sm"
-              onLoadedData={() => setVideoLoaded(true)}
-              onError={() => setVideoError(true)}
+              style={{ display: 'block' }}
+              onLoadedData={() => {
+                setVideoLoaded(true);
+                // Try to play after data is loaded
+                if (videoRef.current) {
+                  videoRef.current.play().then(() => {
+                    setIsPlaying(true);
+                    setIsPaused(false);
+                  }).catch((error) => {
+                    console.warn('Autoplay prevented by browser:', error);
+                    setIsPaused(true);
+                    // Don't set error - video is loaded, just can't autoplay
+                  });
+                }
+              }}
+              onError={(e) => {
+                console.error('Video error:', e);
+                setVideoError(true);
+              }}
+              onCanPlay={() => {
+                // Video is ready to play
+                if (videoRef.current && isPlaying) {
+                  videoRef.current.play().then(() => {
+                    setIsPaused(false);
+                  }).catch(() => {
+                    setIsPaused(true);
+                    // Autoplay blocked - this is normal, user can click to play
+                  });
+                }
+              }}
+              onPlay={() => {
+                setIsPlaying(true);
+                setIsPaused(false);
+              }}
+              onPause={() => {
+                setIsPaused(true);
+                setIsPlaying(false);
+              }}
             >
               <source 
                 src="/hero-video.mp4" 
@@ -99,9 +141,29 @@ const VideoHero = () => {
             </video>
             {/* Show a dark background while video loads instead of Mark's image */}
             {!videoLoaded && (
-              <div className="absolute inset-0 bg-gradient-to-b from-emerald-900 to-emerald-800 flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-b from-emerald-900 to-emerald-800 flex items-center justify-center z-10">
                 <div className="text-white text-center">
                   <div className="animate-pulse text-lg">Loading video...</div>
+                </div>
+              </div>
+            )}
+            {/* Show play button overlay if video is paused (autoplay blocked) */}
+            {videoLoaded && isPaused && !videoError && (
+              <div 
+                className="absolute inset-0 bg-black/20 flex items-center justify-center z-10 cursor-pointer"
+                onClick={() => {
+                  if (videoRef.current) {
+                    videoRef.current.play().then(() => {
+                      setIsPlaying(true);
+                      setIsPaused(false);
+                    }).catch((error) => {
+                      console.error('Video play failed:', error);
+                    });
+                  }
+                }}
+              >
+                <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:bg-white/30 transition-colors">
+                  <Play size={48} className="text-white" />
                 </div>
               </div>
             )}
@@ -166,7 +228,7 @@ const VideoHero = () => {
               donateSection?.scrollIntoView({ behavior: 'smooth' });
             }}
           >
-            Support Mental Health
+            Support Community Health
           </Button>
         </motion.div>
 

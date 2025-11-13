@@ -162,7 +162,7 @@ export default function FinancialAllocation() {
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Every Dollar Counts</h3>
             <p className="text-gray-700 text-lg">
               The first $100,000 covers all documentary production costs. Every dollar raised beyond that 
-              goes directly to CMHA and Glenrose Foundation, multiplying our impact and supporting vital 
+              goes directly to Glenrose Foundation and CMHA, multiplying our impact and supporting vital 
               mental health programs across Canada.
             </p>
           </div>

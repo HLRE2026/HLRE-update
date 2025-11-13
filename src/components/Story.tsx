@@ -20,7 +20,7 @@ export default function Story() {
           </div>
           <div className="relative">
             <img
-              src="https://stackblitz.com/storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBejNiRXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3fdb6ae28a546d06f65614dde2898793d0650117/everart-image.png"
+              src="/assets/everart-image.png"
               alt="Mark Ivancic"
               className="rounded-lg shadow-xl w-full h-[500px] object-cover"
             />

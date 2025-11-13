@@ -6,16 +6,6 @@ import cmhaLogo from '../../assets/cmha-logo.png';
 export default function CharitySupportSection() {
   const charities = [
     {
-      name: 'Canadian Mental Health Association',
-      shortName: 'CMHA Edmonton',
-      url: 'https://edmonton.cmha.ca/',
-      description: 'Providing vital mental health support, crisis intervention, and community programs that help thousands of Canadians every year.',
-      icon: Brain,
-      logo: cmhaLogo,
-      color: 'emerald',
-      impact: ''
-    },
-    {
       name: 'Glenrose Foundation',
       shortName: 'Glenrose',
       url: 'https://glenrosefoundation.com/',
@@ -23,6 +13,16 @@ export default function CharitySupportSection() {
       icon: Heart,
       logo: glenroseLogo,
       color: 'blue',
+      impact: ''
+    },
+    {
+      name: 'Canadian Mental Health Association',
+      shortName: 'CMHA Edmonton',
+      url: 'https://edmonton.cmha.ca/',
+      description: 'Providing vital mental health support, crisis intervention, and community programs that help thousands of Canadians every year.',
+      icon: Brain,
+      logo: cmhaLogo,
+      color: 'emerald',
       impact: ''
     }
   ];

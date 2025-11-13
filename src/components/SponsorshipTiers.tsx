@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Trophy, Medal, Award, Star, CheckCircle, Users, Heart, Camera, Megaphone } from 'lucide-react';
+import { Trophy, Medal, Award, Star, CheckCircle, Users, Heart, Camera } from 'lucide-react';
 
 const sponsorshipTiers = [
   {
@@ -27,8 +27,7 @@ const sponsorshipTiers = [
       "All Bronze benefits",
       "Company logo on expedition gear",
       "Featured in documentary credits",
-      "Behind-the-scenes content access",
-      "Personalized thank you video"
+      "Behind-the-scenes content access"
     ]
   },
   {
@@ -43,9 +42,7 @@ const sponsorshipTiers = [
       "All Silver benefits",
       "Prominent logo placement in documentary",
       "Speaking opportunity at launch event",
-      "Custom social media campaign",
-      "VIP premiere invitation (2 tickets)",
-      "Branded kilometer marker in film"
+      "VIP premiere invitation (2 tickets)"
     ]
   },
   {
@@ -58,11 +55,8 @@ const sponsorshipTiers = [
     benefits: [
       "All Gold benefits",
       "Executive Producer credit",
-      "Custom branded content piece",
       "Full premiere table (8 tickets)",
-      "Partnership announcement press release",
-      "Year-long brand association rights",
-      "Custom impact report for your organization"
+      "Partnership announcement press release"
     ]
   }
 ];
@@ -84,19 +78,35 @@ export default function SponsorshipTiers() {
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
             Every kilometer of Mark's 300km journey represents an opportunity to make a lasting impact
           </p>
-          <div className="bg-emerald-50 rounded-xl p-4 max-w-2xl mx-auto mb-4">
-            <p className="text-lg text-emerald-800 font-semibold mb-2">
-              For Individual Supporters
-            </p>
-            <p className="text-emerald-700">
-              Donate any amount through our Indiegogo campaign! Every dollar counts toward our $300,000 goal.
-            </p>
-            <button
-              onClick={() => window.open('https://www.indiegogo.com', '_blank')}
-              className="mt-3 bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors"
-            >
-              Support on Indiegogo
-            </button>
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-4">
+            <div className="bg-emerald-50 rounded-xl p-4">
+              <p className="text-lg text-emerald-800 font-semibold mb-2">
+                Individual Supporters
+              </p>
+              <p className="text-emerald-700 text-sm mb-3">
+                Donate any amount through our Indiegogo campaign! Every dollar counts toward our $300,000 goal.
+              </p>
+              <button
+                onClick={() => window.open('https://www.indiegogo.com', '_blank')}
+                className="w-full bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors"
+              >
+                Support on Indiegogo
+              </button>
+            </div>
+            <div className="bg-emerald-50 rounded-xl p-4">
+              <p className="text-lg text-emerald-800 font-semibold mb-2">
+                Business Sponsorship
+              </p>
+              <p className="text-emerald-700 text-sm mb-3">
+                Multiple tiers available starting at $1,000. Gain valuable brand exposure and make a lasting impact.
+              </p>
+              <a
+                href="/sponsorship"
+                className="block w-full bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors text-center"
+              >
+                View Sponsorship Tiers
+              </a>
+            </div>
           </div>
           <p className="text-md text-gray-600">
             Business sponsorship tiers start at $1,000 and include promotional benefits
@@ -191,7 +201,7 @@ export default function SponsorshipTiers() {
               </div>
               <h4 className="font-semibold mb-2">Direct Impact</h4>
               <p className="text-gray-600 text-sm">
-                $200,000 goes directly to CMHA and Glenrose Foundation
+                $200,000 goes directly to Glenrose Foundation and CMHA
               </p>
             </div>
             
@@ -216,24 +226,6 @@ export default function SponsorshipTiers() {
             </div>
           </div>
 
-          {/* Custom Sponsorship Option */}
-          <div className="mt-12 text-center">
-            <p className="text-gray-700 mb-4">
-              <strong>Looking for a custom sponsorship package?</strong>
-            </p>
-            <p className="text-gray-600 mb-6">
-              We're happy to create a personalized sponsorship opportunity that aligns with your organization's goals and budget.
-            </p>
-            <button
-              onClick={() => {
-                window.location.href = 'mailto:info@hlre.ca?subject=Custom%20Sponsorship%20Inquiry';
-              }}
-              className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
-            >
-              <Megaphone className="w-5 h-5" />
-              Discuss Custom Package
-            </button>
-          </div>
         </motion.div>
 
         {/* Tax Receipt Note */}

@@ -42,8 +42,8 @@ export default function Footer() {
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
                 <div className="flex flex-col">
-                  <span>#1107, 9918-101 St.</span>
-                  <span>Edmonton</span>
+                  <span>Project #1107, 9918-101 St.</span>
+                  <span>Edmonton, Alberta, Canada</span>
                 </div>
               </div>
             </div>

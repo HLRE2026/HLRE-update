@@ -72,7 +72,7 @@ const FundraisingJourney = () => {
       id: 'charity',
       location: "Athabasca Falls",
       title: "Charity Donations",
-      description: "Support CMHA & Glenrose",
+      description: "Support Glenrose & CMHA",
       amount: "$200,000",
       status: "upcoming",
       icon: Heart,
@@ -103,7 +103,7 @@ const FundraisingJourney = () => {
             Our Journey to $300,000
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            We're raising $100,000 to produce the documentary and $200,000 to donate to CMHA and Glenrose Foundation
+            We're raising $100,000 to produce the documentary and $200,000 to donate to Glenrose Foundation and CMHA
           </p>
           
           {/* Fundraising Progress Bar */}

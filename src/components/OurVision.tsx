@@ -11,7 +11,7 @@ const visionPoints = [
   {
     icon: Heart,
     title: "Mental Health Support",
-    description: "$200,000 donated directly to CMHA and Glenrose Foundation",
+    description: "$200,000 donated directly to Glenrose Foundation and CMHA",
     color: 'bg-emerald-100 text-emerald-600'
   },
   {
