@@ -105,7 +105,7 @@ export default function Resources() {
   }, []);
 
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-white">
       <div className="container mx-auto px-4 py-12">
         {/* Books Section */}
         <section className="mb-16 bg-gray-50 py-12 rounded-xl">
@@ -138,7 +138,7 @@ export default function Resources() {
         </section>
 
         {/* Recovery Videos Section */}
-        <section className="mb-16">
+        <section className="mb-16 bg-white">
           <h2 className="text-3xl font-bold mb-8">Recovery Journey</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {videosLoading ? (

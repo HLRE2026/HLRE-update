@@ -56,7 +56,7 @@ const sponsorshipTiers = [
 
 export default function Sponsorship() {
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-white">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-b from-emerald-600 to-emerald-700 text-white">
         <div className="container mx-auto px-4">

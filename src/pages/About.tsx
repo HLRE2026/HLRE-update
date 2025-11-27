@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-white">
       <section className="py-24 bg-emerald-700">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center text-white">
