@@ -10,7 +10,7 @@ import Sponsorship from './pages/Sponsorship';
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen">
+      <div className="min-h-screen bg-white">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
