@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { DollarSign, FileText, Camera } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import SponsorshipTable from '../SponsorshipTable';
 
 const fundingBreakdown = [
@@ -29,7 +30,7 @@ export default function FinancialAllocation() {
         >
           <h2 className="text-4xl font-bold mb-4">Financial Resources & Allocation</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're raising $300,000 total: $100,000 for the documentary and $200,000 for mental health charities
+            We're raising $300,000 total: $100,000 for the documentary and $200,000 for charities that support mental and community health.
           </p>
         </motion.div>
 
@@ -161,10 +162,38 @@ export default function FinancialAllocation() {
             </div>
             <h3 className="text-2xl font-bold mb-4 text-gray-900">Every Dollar Counts</h3>
             <p className="text-gray-700 text-lg">
-              The first $100,000 covers all documentary production costs. Every dollar raised beyond that 
-              goes directly to Glenrose Foundation and CMHA, multiplying our impact and supporting vital 
-              mental health programs across Canada.
+              The first $100,000 covers all documentary production costs. Every dollar raised beyond that goes directly to Glenrose Foundation and Canadian Mental Health Association, multiplying our impact and supporting vital community and mental health charities across Canada.
             </p>
+          </div>
+        </motion.div>
+
+        {/* Ready To Make An Impact Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="mt-12 text-center max-w-4xl mx-auto"
+        >
+          <div className="bg-secondary-900 rounded-2xl p-12 text-white">
+            <h3 className="text-3xl font-bold mb-6">Ready To Make An Impact?</h3>
+            <p className="text-xl mb-8 text-gray-300">
+              Join us as an individual and business contributor and help us reach our $300,000 goal.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                to="/sponsorship"
+                className="bg-primary-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-700 transition-colors"
+              >
+                Individual Support
+              </Link>
+              <Link
+                to="/sponsorship"
+                className="bg-white text-secondary-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Business Sponsorship
+              </Link>
+            </div>
           </div>
         </motion.div>
       </div>

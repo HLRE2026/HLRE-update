@@ -1,5 +1,6 @@
 import { Heart, Brain, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import glenroseLogo from '../../assets/glenrose-logo.png';
 import cmhaLogo from '../../assets/cmha-logo.png';
 
@@ -108,16 +109,13 @@ export default function CharitySupportSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="mt-12 text-center"
         >
-          <button
-            onClick={() => {
-              const whySection = document.getElementById('why-it-matters');
-              whySection?.scrollIntoView({ behavior: 'smooth' });
-            }}
+          <Link
+            to="/sponsorship"
             className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
           >
             <Users className="w-5 h-5" />
             Join Our Mission for Mental Health
-          </button>
+          </Link>
         </motion.div>
       </div>
     </section>

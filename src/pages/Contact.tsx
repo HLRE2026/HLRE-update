@@ -91,7 +91,6 @@ export default function Contact() {
                     <h3 className="font-semibold">Phone</h3>
                     <p className="text-gray-600">Dan Adcock (Producer): 780-554-5576</p>
                     <p className="text-gray-600">Matt Dringenberg (Director): 780-909-2763</p>
-                    <p className="text-gray-600">Jeremy Hamilton (Community Engagement): [Phone number needed]</p>
                   </div>
                 </div>
 
@@ -100,7 +99,9 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-gray-600">
-                      Project #1107, 9918-101 St. Edmonton, Alberta, Canada
+                      5407 92 B Ave<br />
+                      Edmonton, AB T5J 2B2<br />
+                      Canada
                     </p>
                   </div>
                 </div>

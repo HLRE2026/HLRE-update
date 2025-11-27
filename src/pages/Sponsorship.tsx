@@ -4,60 +4,52 @@ import { Link } from 'react-router-dom';
 
 const sponsorshipTiers = [
   {
-    name: "Bronze Business",
+    name: "Keeping Us Moving",
+    tagline: "$1,000 for 1 Kilometer",
     amount: "$1,000",
-    perKm: "1 kilometer",
+    perKm: "1 Kilometer",
     icon: Medal,
     color: "from-emerald-400 to-emerald-500",
     borderColor: "border-emerald-400",
     benefits: [
-      "Company name listed on website",
-      "Social media thank you post",
-      "Digital certificate of appreciation",
-      "Updates on expedition progress"
+      "Logo featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
+      "Small size logo on HLRE marketing trailer (bike route coverage)",
+      "Logo placement on the HLRE website with clickable sponsor feature & social media posts",
+      "VIP tickets to the Premiere Gala Screening (2 tickets)"
     ]
   },
   {
-    name: "Silver Business",
-    amount: "$5,000",
-    perKm: "5 kilometers",
+    name: "Pushing The Limits",
+    tagline: "$7,500 for 7.5 Kilometers",
+    amount: "$7,500",
+    perKm: "7.5 Kilometers",
     icon: Trophy,
     color: "from-emerald-500 to-emerald-600",
     borderColor: "border-emerald-500",
-    benefits: [
-      "All Bronze benefits",
-      "Company logo on expedition gear",
-      "Featured in documentary credits",
-      "Behind-the-scenes content access"
-    ]
-  },
-  {
-    name: "Gold Business",
-    amount: "$10,000",
-    perKm: "10 kilometers",
-    icon: Award,
-    color: "from-emerald-600 to-emerald-700",
-    borderColor: "border-emerald-600",
     featured: true,
     benefits: [
-      "All Silver benefits",
-      "Prominent logo placement in documentary",
-      "Speaking opportunity at launch event",
-      "VIP premiere invitation (2 tickets)"
+      "Name acknowledgement featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
+      "Large size logo on HLRE marketing trailer (bike route & media coverage)",
+      "Logo placement on the HLRE website with clickable sponsor feature & social media posts",
+      "VIP speaking opportunity & tickets to the Premiere Gala Screening (15 tickets)",
+      "Special invitation & partnership acknowledgement in HLRE media releases and events"
     ]
   },
   {
-    name: "Platinum Partner",
-    amount: "$15,000+",
-    perKm: "15+ kilometers",
+    name: "Reaching The Finish Line",
+    tagline: "$15,000 for 15 Kilometers",
+    amount: "$15,000",
+    perKm: "15 Kilometers",
     icon: Star,
-    color: "from-emerald-700 to-emerald-800",
-    borderColor: "border-emerald-700",
+    color: "from-emerald-600 to-emerald-700",
+    borderColor: "border-emerald-600",
     benefits: [
-      "All Gold benefits",
-      "Executive Producer credit",
-      "Full premiere table (8 tickets)",
-      "Partnership announcement press release"
+      "Name acknowledgement featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
+      "Extra large size logo on HLRE marketing trailer (bike route & media coverage)",
+      "Logo placement on the HLRE website with clickable sponsor feature & social media posts",
+      "VIP speaking opportunity & tickets to the Premiere Gala Screening (30 tickets)",
+      "Special invitation & partnership acknowledgement in HLRE media releases and events",
+      "Behind-the-scenes documentary access (7 day bike trip - Jasper to Banff)"
     ]
   }
 ];
@@ -128,15 +120,10 @@ export default function Sponsorship() {
               Business sponsorship tiers start at $1,000 and include valuable promotional benefits. 
               Every tier helps us reach our $300,000 goal while giving your brand meaningful exposure.
             </p>
-            <div className="bg-blue-50 rounded-xl p-4 max-w-2xl mx-auto">
-              <p className="text-blue-800 font-semibold">
-                Campaign Goal: $300,000 | $1,000 × 100 + $5,000 × 10 + $15,000 × 5 = $300,000
-              </p>
-            </div>
           </motion.div>
 
           {/* Tiers Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {sponsorshipTiers.map((tier, index) => {
               const Icon = tier.icon;
               return (
@@ -160,8 +147,8 @@ export default function Sponsorship() {
                   <div className={`bg-gradient-to-br ${tier.color} p-6 text-white`}>
                     <Icon className="w-12 h-12 mb-3" />
                     <h3 className="text-2xl font-bold mb-2">{tier.name}</h3>
-                    <div className="text-3xl font-bold mb-1">{tier.amount}</div>
-                    <div className="text-sm opacity-90">Sponsors {tier.perKm}</div>
+                    <div className="text-sm opacity-90 mb-2">{tier.tagline}</div>
+                    <div className="text-3xl font-bold">{tier.amount}</div>
                   </div>
 
                   {/* Benefits List */}
