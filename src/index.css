@@ -5,10 +5,16 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    background-color: white;
   }
 
   body {
     @apply text-gray-900 antialiased bg-white;
+    background-color: white;
+  }
+  
+  #root {
+    background-color: white;
   }
 }
 
