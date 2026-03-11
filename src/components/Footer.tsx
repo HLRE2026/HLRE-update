@@ -35,9 +35,6 @@ export default function Footer() {
                 <div className="flex items-center space-x-2 pl-7">
                   <span>Matt Dringenberg (Director): 780-909-2763</span>
                 </div>
-                <div className="flex items-center space-x-2 pl-7">
-                  <span>Jeremy Hamilton (Community Engagement): [Phone number needed]</span>
-                </div>
               </div>
               <div className="flex items-start space-x-2">
                 <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
