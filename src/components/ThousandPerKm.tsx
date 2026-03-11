@@ -14,7 +14,7 @@ export default function ThousandPerKm() {
   const bikePosition = `${progressPercentage}%`;
 
   return (
-    <section ref={containerRef} className="py-20 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
+    <section ref={containerRef} className="pt-20 pb-8 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         {/* Main Campaign Message */}
         <motion.div
