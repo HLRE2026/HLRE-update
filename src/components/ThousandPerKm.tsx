@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { Bike, Heart, Users, TrendingUp } from 'lucide-react';
+import { Bike, Heart, TrendingUp } from 'lucide-react';
 
 export default function ThousandPerKm() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -82,7 +82,7 @@ export default function ThousandPerKm() {
         </div>
 
         {/* Impact Breakdown */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -113,20 +113,7 @@ export default function ThousandPerKm() {
             <p className="text-sm text-blue-600 mt-2">Direct to charities</p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="bg-white rounded-2xl p-8 shadow-lg text-center"
-          >
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-purple-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">4,000+</h3>
-            <p className="text-gray-600">People Helped</p>
-            <p className="text-sm text-purple-600 mt-2">Through programs</p>
-          </motion.div>
+          
         </div>
 
         {/* Call to Action */}
