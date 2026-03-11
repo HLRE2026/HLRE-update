@@ -35,7 +35,7 @@ export default function ThousandPerKm() {
           </p>
           <div className="bg-emerald-50 rounded-xl px-6 py-3 max-w-2xl mx-auto">
             <p className="text-emerald-700 font-medium">
-              <strong>Individuals:</strong> Support via Indiegogo (any amount) • <strong>Businesses:</strong> HLRE sponsorship (min. $1,000)
+              <strong>Donations:</strong> Tax receipts provided through the Glenrose Foundation ($25 or greater) <strong>Sponsorship:</strong> Details to be discussed with project team (Min. $1,000)
             </p>
           </div>
         </motion.div>
