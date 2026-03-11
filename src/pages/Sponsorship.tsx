@@ -61,7 +61,7 @@ export default function Sponsorship() {
       <section className="py-24 bg-gradient-to-b from-emerald-600 to-emerald-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Sponsorship Opportunities</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Donations and Sponsorships</h1>
             <p className="text-xl md:text-2xl leading-relaxed">
               Join us in supporting Mark's 300km journey and make a lasting impact on mental health and stroke recovery
             </p>

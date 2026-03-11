@@ -13,7 +13,7 @@ export default function SponsorshipTiers() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Sponsorship Opportunities
+            Donations and Sponsorships
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-4">
             Every kilometer of Mark's 300km journey represents an opportunity to make a lasting impact
