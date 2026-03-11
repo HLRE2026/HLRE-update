@@ -96,17 +96,7 @@ export default function SponsorshipTiers() {
 
         </motion.div>
 
-        {/* Tax Receipt Note */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center mt-8"
-        >
-          <p className="text-sm text-gray-600 bg-white rounded-lg p-4 inline-block">
-            <strong>Note:</strong> Charitable tax receipts available for portions of sponsorships going directly to registered charities.
-          </p>
-        </motion.div>
+        
       </div>
     </section>
   );
