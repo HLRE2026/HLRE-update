@@ -1,63 +1,79 @@
-import Journey from '../components/About/Journey';
-import Team from '../components/About/Team';
-import Story from '../components/Story';
-import FinancialAllocation from '../components/About/FinancialAllocation';
+import VideoHero from '../components/VideoHero';
+import ThousandPerKm from '../components/ThousandPerKm';
+import OurVision from '../components/OurVision';
+import CharitySupportSection from '../components/CharitySupportSection';
+import SponsorshipTiers from '../components/SponsorshipTiers';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
-export default function About() {
+export default function Home() {
   return (
-    <div className="pt-20 bg-white">
-      <section className="py-24 bg-emerald-700">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center text-white">
-            <h1 className="text-5xl font-bold mb-6">About HLRE</h1>
-            <p className="text-xl leading-relaxed">
-              The Hope Love & Resilience Expedition is more than a journey through the Canadian Rockies - 
-              it's a testament to the human spirit's ability to overcome adversity and inspire others along the way.
-            </p>
-          </div>
-        </div>
-      </section>
+    <main>
+      {/* Full-screen Video Hero */}
+      <VideoHero />
       
-      {/* Mark's Personal Story */}
+      {/* Full Documentary Video Section */}
+      <motion.section
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        id="documentary-video"
+        className="py-12 md:py-16 px-6 bg-gray-50"
+      >
+        <div className="container mx-auto max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-8"
+          >
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Watch the Full Story
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Join Mark on his 300km journey raising awareness for mental health across the Canadian Rockies
+            </p>
+          </motion.div>
+          
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full rounded-xl shadow-2xl overflow-hidden"
+            style={{ paddingTop: '56.25%' }}
+          >
+            <iframe
+              src="https://player.vimeo.com/video/1026632300?badge=0&autopause=0&player_id=0&app_id=58479&title=0&byline=0&portrait=0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+              allowFullScreen
+              title="HLRE – Full Documentary"
+              className="absolute inset-0 w-full h-full"
+            />
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* $1,000 per Kilometer Campaign */}
+      <ThousandPerKm />
+
+      {/* Sponsorship Tiers - Benefits for Different Levels */}
+      <SponsorshipTiers />
+
+      {/* Our Vision - What Your Support Will Achieve */}
+      <OurVision />
+
+      {/* Charity Partners - Mental Health Focus */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
+        id="donate-section"
       >
-        <Story />
+        <CharitySupportSection />
       </motion.div>
-      
-      <Journey />
-      
-      {/* Financial Resources & Allocation */}
-      <FinancialAllocation />
-      
-      {/* Become a Business Sponsor CTA */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-        className="py-12 bg-emerald-50"
-      >
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Make an Impact?</h2>
-          <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-            Join us as a business sponsor and help us reach our $300,000 goal while gaining valuable brand exposure
-          </p>
-          <Link
-            to="/sponsorship"
-            className="inline-block bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
-          >
-            Become a Business Sponsor
-          </Link>
-        </div>
-      </motion.div>
-      
-      <Team />
-    </div>
+    </main>
   );
 }
