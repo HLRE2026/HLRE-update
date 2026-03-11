@@ -98,7 +98,7 @@ export default function Sponsorship() {
                 onClick={() => window.open('https://www.indiegogo.com', '_blank')}
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
-                Donate here
+                Make a donation
                 <ArrowRight className="w-5 h-5" />
               </button>
             </div>
@@ -293,7 +293,7 @@ export default function Sponsorship() {
               className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-colors"
             >
               <Heart className="w-5 h-5" />
-              Donate here
+              Make a donation
             </button>
             <Link
               to="/about"

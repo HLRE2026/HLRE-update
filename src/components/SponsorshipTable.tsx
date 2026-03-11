@@ -112,7 +112,7 @@ export default function SponsorshipTable() {
             onClick={() => window.open('https://www.indiegogo.com', '_blank')}
             className="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
           >
-            Donate here
+            Make a donation
           </button>
           <button
             onClick={() => {
