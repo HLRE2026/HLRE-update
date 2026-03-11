@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
-                <span>info@hlre2025.com</span>
+                <span>mridocfilm@gmail.com</span>
               </div>
               <div className="flex flex-col space-y-2">
                 <div className="flex items-center space-x-2">
