@@ -30,7 +30,7 @@ export default function SponsorshipTiers() {
                 onClick={() => window.open('https://www.indiegogo.com', '_blank')}
                 className="w-full bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors"
               >
-                Make a donation
+                Make a Donation
               </button>
             </div>
             <div className="bg-emerald-50 rounded-xl p-4">
