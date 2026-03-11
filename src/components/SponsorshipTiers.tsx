@@ -21,7 +21,7 @@ export default function SponsorshipTiers() {
           <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-4">
             <div className="bg-emerald-50 rounded-xl p-4">
               <p className="text-lg text-emerald-800 font-semibold mb-2">
-                Individual Supporters
+                Donations
               </p>
               <p className="text-emerald-700 text-sm mb-3">
                 Donate any amount through our Indiegogo campaign! Every dollar counts toward our $300,000 goal.
@@ -35,7 +35,7 @@ export default function SponsorshipTiers() {
             </div>
             <div className="bg-emerald-50 rounded-xl p-4">
               <p className="text-lg text-emerald-800 font-semibold mb-2">
-                Business Sponsorship
+                Sponsorships
               </p>
               <p className="text-emerald-700 text-sm mb-3">
                 Multiple tiers available starting at $1,000. Gain valuable brand exposure and make a lasting impact.
