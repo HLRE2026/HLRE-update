@@ -24,7 +24,7 @@ export default function SponsorshipTiers() {
                 Donations
               </p>
               <p className="text-emerald-700 text-sm mb-3">
-                Donate any amount through our Indiegogo campaign! Every dollar counts toward our $300,000 goal.
+                Donate any amount through our campaign! Every dollar counts toward our $300,000 goal.
               </p>
               <button
                 onClick={() => window.open('https://www.indiegogo.com', '_blank')}
