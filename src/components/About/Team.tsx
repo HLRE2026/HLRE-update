@@ -13,18 +13,18 @@ const team = [
     email: "matt@integrafilms.net"
   },
   {
-    name: "Dan Adcock",
-    role: "Producer",
-    image: danImg,
-    bio: "Dan is the Son-in-law of Mark Ivancic, and later to become videographer, video producer, website designer/editor and anything related to technology. Over the years, Mark and I collaborated on hosting a number of youth empowerment events in the greater Edmonton area. We both share a hobby for the outdoors and enjoy hiking, climbing and scrambling in the Canadian Rockies. From 2007 to 2020 Dan held a volunteer director position for a not-for-profit charity named the Evan Grykuliak Memorial Society (EGMS), the charity's mandate involved youth bullying prevention through leadership initiatives. Our flagship fund raising event Kicking Out Bullying (3v3 soccer tournament) provided funding to assist in the implementation for programs that aligned with our vision in schools across Alberta (Olweus Bullying Prevention and/or Leader in Me). In 2015 and 2016, Mark and Dan hosted the Power in Me - a youth empowerment day with a collection of speakers followed by entertainers in an engaging and inspiring event geared toward overcoming life's obstacles. These events were held at the Northlands Expo center Hall D and boasted attendance of upwards of 3000 students.",
-    email: "danadcock554@gmail.com"
-  },
-  {
     name: "Lloyd Salomone",
     role: "Executive Producer",
     image: lloydImg,
     bio: "Lloyd grew up with Mark Ivancic in Schumacher, Ontario. As friends living in a Northern Ontario gold mining community they played a lot of sports and hung out together, along with childhood friends known as the Schumacher Boys. To the boys, Mark's nick name is Ivy, so they'll be participating in the Hope Love & Resilience Expedition and will be at the finish line to celebrate this accomplishment. Lloyd signed on to help Ivy produce a documentary film about his journey.\n\nLloyd owns a documentary media production company based in Fredericton, New Brunswick. Since 2003, he has produced documentaries for television broadcasts, online streaming, interactive websites, and educational purposes. Lloyd has worked with the National Film Board of Canada, Canadian Broadcasting Corporation, Aboriginal Peoples Television Network, Bravo Channel, Bell FibeTV; and with researchers at various cultural and academic institutions (i.e. Beaverbrook Art Gallery, New Brunswick Museum, University of New Brunswick, Laurentian University, St. Thomas University).",
     email: "lloyd_salomone@hotmail.com"
+  },
+  {
+    name: "Dan Adcock",
+    role: "Producer",
+    image: danImg,
+    bio: "Dan is the Son-in-law of Mark Ivancic, and later to become videographer, video producer, website designer/editor and anything related to technology. Over the years, Mark and I collaborated on hosting a number of youth empowerment events in the greater Edmonton area. We both share a hobby for the outdoors and enjoy hiking, climbing and scrambling in the Canadian Rockies. From 2007 to 2020 Dan held a volunteer director position for a not-for-profit charity named the Evan Grykuliak Memorial Society (EGMS), the charity's mandate involved youth bullying prevention through leadership initiatives. Our flagship fund raising event Kicking Out Bullying (3v3 soccer tournament) provided funding to assist in the implementation for programs that aligned with our vision in schools across Alberta (Olweus Bullying Prevention and/or Leader in Me). In 2015 and 2016, Mark and Dan hosted the Power in Me - a youth empowerment day with a collection of speakers followed by entertainers in an engaging and inspiring event geared toward overcoming life's obstacles. These events were held at the Northlands Expo center Hall D and boasted attendance of upwards of 3000 students.",
+    email: "danadcock554@gmail.com"
   },
   {
     name: "Jeremy Hamilton",
