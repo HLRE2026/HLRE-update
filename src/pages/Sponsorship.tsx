@@ -70,7 +70,7 @@ export default function Sponsorship() {
       </section>
 
       {/* Individual Supporters Section */}
-      <section className="py-20 bg-white">
+      <section className="pt-20 pb-8 bg-white">
         <div className="container mx-auto px-4 max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
