@@ -157,35 +157,7 @@ export default function FinancialAllocation() {
           </div>
         </motion.div>
 
-        {/* Ready To Make An Impact Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-12 text-center max-w-4xl mx-auto"
-        >
-          <div className="bg-secondary-900 rounded-2xl p-12 text-white">
-            <h3 className="text-3xl font-bold mb-6">Ready To Make An Impact?</h3>
-            <p className="text-xl mb-8 text-gray-300">
-              Join us as an individual and business contributor and help us reach our $300,000 goal.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/sponsorship"
-                className="bg-primary-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-700 transition-colors"
-              >
-                Donations
-              </Link>
-              <Link
-                to="/sponsorship"
-                className="bg-white text-secondary-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Sponsorship
-              </Link>
-            </div>
-          </div>
-        </motion.div>
+        
       </div>
     </section>
   );
