@@ -69,7 +69,7 @@ export default function SponsorshipTiers() {
               </div>
               <h4 className="font-semibold mb-2">Direct Impact</h4>
               <p className="text-gray-600 text-sm">
-                $200,000 goes directly to Glenrose Foundation and CMHA
+                $200,000 goes directly to Glenrose Foundation and Canadian Mental Health Association
               </p>
             </div>
             
