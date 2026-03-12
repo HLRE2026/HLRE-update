@@ -181,7 +181,7 @@ export default function FinancialAllocation() {
                 to="/sponsorship"
                 className="bg-white text-secondary-900 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-colors"
               >
-                Business Sponsorship
+                Sponsorship
               </Link>
             </div>
           </div>
