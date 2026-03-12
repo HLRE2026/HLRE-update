@@ -1,6 +1,6 @@
 export default function Story() {
   return (
-    <section className="py-24 bg-white">
+    <section className="pt-24 pb-8 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div>
