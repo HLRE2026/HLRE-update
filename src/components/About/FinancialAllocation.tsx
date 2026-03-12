@@ -30,7 +30,7 @@ export default function FinancialAllocation() {
         >
           <h2 className="text-4xl font-bold mb-4">Financial Resources & Allocation</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We're raising $300,000 total: $100,000 for the documentary and $200,000 for charities that support mental and community health.
+            We're raising $300,000 total: $100,000 for documentary costs and $200,000 for the Glenrose Hospital Foundation and Canadian Mental Health Association.
           </p>
         </motion.div>
 
