@@ -34,7 +34,7 @@ export default function FinancialAllocation() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Funding Sources */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -135,16 +135,6 @@ export default function FinancialAllocation() {
                 </motion.div>
               ))}
             </div>
-          </motion.div>
-
-          {/* Sponsorship Table */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <SponsorshipTable />
           </motion.div>
         </div>
 
