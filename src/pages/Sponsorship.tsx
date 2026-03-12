@@ -172,22 +172,16 @@ export default function Sponsorship() {
 
                   {/* CTA Button */}
                   <div className="px-6 pb-6 mt-auto">
-                    <button
-                      onClick={() => {
-                        window.location.href = `mailto:mridocfilm@gmail.com?subject=${encodeURIComponent(
-                          `Interest in ${tier.name} Sponsorship`
-                        )}&body=${encodeURIComponent(
-                          `I'm interested in learning more about the ${tier.name} sponsorship opportunity for the Hope, Love & Resilience Expedition.`
-                        )}`;
-                      }}
-                      className={`w-full py-3 rounded-lg font-semibold transition-all ${
+                    <Link
+                      to="/contact"
+                      className={`w-full py-3 rounded-lg font-semibold transition-all block text-center ${
                         tier.featured
                           ? 'bg-emerald-600 text-white hover:bg-emerald-700'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
                       Contact Us
-                    </button>
+                    </Link>
                   </div>
                 </motion.div>
               );
