@@ -61,7 +61,7 @@ export default function Sponsorship() {
       <section className="py-24 bg-gradient-to-b from-emerald-600 to-emerald-700 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">Sponsorship Opportunities</h1>
+            <h1 className="text-5xl md:text-6xl font-bold mb-6">Donations and Sponsorships</h1>
             <p className="text-xl md:text-2xl leading-relaxed">
               Join us in supporting Mark's 300km journey and make a lasting impact on mental health and stroke recovery
             </p>
@@ -98,7 +98,7 @@ export default function Sponsorship() {
                 onClick={() => window.open('https://www.indiegogo.com', '_blank')}
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
-                Support on Indiegogo
+                Make a Donation
                 <ArrowRight className="w-5 h-5" />
               </button>
             </div>
@@ -266,17 +266,7 @@ export default function Sponsorship() {
             </div>
           </motion.div>
 
-          {/* Tax Receipt Note */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="text-center mt-8"
-          >
-            <p className="text-sm text-gray-600 bg-white rounded-lg p-4 inline-block">
-              <strong>Note:</strong> Charitable tax receipts available for portions of sponsorships going directly to registered charities.
-            </p>
-          </motion.div>
+          
         </div>
       </section>
 
@@ -293,7 +283,7 @@ export default function Sponsorship() {
               className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-colors"
             >
               <Heart className="w-5 h-5" />
-              Support on Indiegogo
+              Make a Donation
             </button>
             <Link
               to="/about"

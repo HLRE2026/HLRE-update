@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <Mail className="h-5 w-5" />
-                <span>info@hlre2025.com</span>
+                <span>mridocfilm@gmail.com</span>
               </div>
               <div className="flex flex-col space-y-2">
                 <div className="flex items-center space-x-2">
@@ -35,17 +35,8 @@ export default function Footer() {
                 <div className="flex items-center space-x-2 pl-7">
                   <span>Matt Dringenberg (Director): 780-909-2763</span>
                 </div>
-                <div className="flex items-center space-x-2 pl-7">
-                  <span>Jeremy Hamilton (Community Engagement): [Phone number needed]</span>
-                </div>
               </div>
-              <div className="flex items-start space-x-2">
-                <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
-                <div className="flex flex-col">
-                  <span>Project #1107, 9918-101 St.</span>
-                  <span>Edmonton, Alberta, Canada</span>
-                </div>
-              </div>
+              
             </div>
           </div>
 

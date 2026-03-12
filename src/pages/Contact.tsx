@@ -99,8 +99,8 @@ export default function Contact() {
                   <div>
                     <h3 className="font-semibold">Address</h3>
                     <p className="text-gray-600">
-                      5407 92 B Ave<br />
-                      Edmonton, AB T5J 2B2<br />
+                      #1107 9918-101 Street<br />
+                      Edmonton, AB T5K 2L1<br />
                       Canada
                     </p>
                   </div>

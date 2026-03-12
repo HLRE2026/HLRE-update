@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { Bike, Heart, Users, TrendingUp } from 'lucide-react';
+import { Bike, Heart, TrendingUp } from 'lucide-react';
 
 export default function ThousandPerKm() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -14,7 +14,7 @@ export default function ThousandPerKm() {
   const bikePosition = `${progressPercentage}%`;
 
   return (
-    <section ref={containerRef} className="py-20 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
+    <section ref={containerRef} className="pt-20 pb-8 bg-gradient-to-b from-emerald-50 to-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         {/* Main Campaign Message */}
         <motion.div
@@ -31,11 +31,11 @@ export default function ThousandPerKm() {
             Help Mark raise funds for every kilometer of his 300km journey
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">
-            That's $300,000 total – with $200,000 going directly to Glenrose Foundation and CMHA after documentary costs
+            Our goal is $300,000. The first $100,000 covers documentary production costs. All funds raised beyond $100,000 will go directly to the Glenrose Hospital Foundation and the Canadian Mental Health Association
           </p>
           <div className="bg-emerald-50 rounded-xl px-6 py-3 max-w-2xl mx-auto">
             <p className="text-emerald-700 font-medium">
-              <strong>Individuals:</strong> Support via Indiegogo (any amount) • <strong>Businesses:</strong> HLRE sponsorship (min. $1,000)
+              <strong>Donations:</strong> Tax receipts provided through the Glenrose Foundation ($25 or greater) <strong>Sponsorship:</strong> Details to be discussed with project team (Min. $1,000)
             </p>
           </div>
         </motion.div>
@@ -82,7 +82,7 @@ export default function ThousandPerKm() {
         </div>
 
         {/* Impact Breakdown */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-8 mb-16 max-w-3xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -113,20 +113,7 @@ export default function ThousandPerKm() {
             <p className="text-sm text-blue-600 mt-2">Direct to charities</p>
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="bg-white rounded-2xl p-8 shadow-lg text-center"
-          >
-            <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-purple-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">4,000+</h3>
-            <p className="text-gray-600">People Helped</p>
-            <p className="text-sm text-purple-600 mt-2">Through programs</p>
-          </motion.div>
+          
         </div>
 
         {/* Call to Action */}

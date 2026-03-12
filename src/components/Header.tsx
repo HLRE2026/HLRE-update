@@ -1,7 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import hlreLogo from '../../assets/hlre-logo.svg';
+import hlreLogo from '/images/HLRE2026LOGO.png';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function Header() {
               <img 
                 src={hlreLogo}
                 alt="HLRE Logo"
-                className="h-12 sm:h-14 lg:h-16 w-auto"
+                className="h-16 sm:h-20 lg:h-24 w-auto"
               />
             </Link>
           </div>
