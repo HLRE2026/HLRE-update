@@ -19,7 +19,7 @@ const timeline = [
   {
     year: "2019-2020",
     title: "Author & Motivator",
-    description: "Mark wrote and self-published two books designed to motivate and inspire others on their journey in life."
+    description: "Mark wrote and self-published two books designed to motivate and inspire others on their journey in recovery."
   },
   {
     year: "2021",
