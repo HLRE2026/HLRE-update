@@ -78,7 +78,7 @@ export default function Sponsorship() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="text-4xl font-bold mb-4">Individual Supporters</h2>
+            <h2 className="text-4xl font-bold mb-4">Donations</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
               Every dollar counts! Support Mark's journey through our Indiegogo campaign. 
               Donate any amount that feels right for you and help us reach our $300,000 goal.

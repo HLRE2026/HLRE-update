@@ -175,7 +175,7 @@ export default function FinancialAllocation() {
                 to="/sponsorship"
                 className="bg-primary-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-primary-700 transition-colors"
               >
-                Individual Support
+                Donations
               </Link>
               <Link
                 to="/sponsorship"

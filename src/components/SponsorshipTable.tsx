@@ -3,7 +3,7 @@ import { DollarSign, Users, Building2, Star } from 'lucide-react';
 
 const sponsorshipLevels = [
   {
-    tier: "Individual Supporters (Indiegogo)",
+    tier: "Donations (Indiegogo)",
     amount: "Any Amount",
     quantity: "Unlimited",
     total: "Every $ Counts",
