@@ -11,7 +11,7 @@ export default function Contact() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // Handle form submission - typically would send to a server
-    window.location.href = `mailto:info@hlre2025.com?subject=Contact from ${formData.name}&body=${formData.message}`;
+    window.location.href = `mailto:mridocfilm@gmail.com?subject=Contact from ${formData.name}&body=${formData.message}`;
   };
 
   return (
@@ -81,7 +81,7 @@ export default function Contact() {
                   <Mail className="w-6 h-6 text-emerald-600 mt-1" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-600">info@hlre2025.com</p>
+                    <p className="text-gray-600">mridocfilm@gmail.com</p>
                   </div>
                 </div>
 
