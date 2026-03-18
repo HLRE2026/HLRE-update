@@ -2,9 +2,16 @@ export default function Story() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-4xl mx-auto">
           <div>
-            <h2 className="text-4xl font-bold mb-6">Mark's Story</h2>
+            <div className="flex items-center gap-6 mb-6">
+              <img
+                src="/assets/everart-image.png"
+                alt="Mark Ivancic"
+                className="rounded-lg shadow-xl w-32 h-32 object-cover"
+              />
+              <h2 className="text-4xl font-bold">Mark's Story</h2>
+            </div>
             <p className="text-gray-600 mb-6 leading-relaxed">
               Mark Ivancic's journey is a powerful testament to resilience, transformation, and the unwavering strength of the human spirit. A beloved teacher, musician, and community leader, Mark inspired countless lives through his adventurous spirit and compassionate heart. But in 2018, after a game of hockey, his life took an unexpected turn when he suffered a severe stroke that left him with partial paralysis, challenging him to rebuild his life from the ground up.
             </p>
@@ -18,14 +25,7 @@ export default function Story() {
               <strong>Inspiring Educator:</strong> Mark has delivered bullying prevention presentations to multiple schools across his school division and beyond, reaching hundreds of students with messages of empathy, respect, and resilience. His experience in addressing youth challenges, combined with his personal journey of overcoming adversity, makes him a powerful voice for positive change in educational communities.
             </p>
           </div>
-          <div className="relative">
-            <img
-              src="/assets/everart-image.png"
-              alt="Mark Ivancic"
-              className="rounded-lg shadow-xl w-full h-[500px] object-cover"
-            />
-            <div className="absolute inset-0 bg-emerald-600/10 rounded-lg" />
-          </div>
+          
         </div>
       </div>
     </section>
