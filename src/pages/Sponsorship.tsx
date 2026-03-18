@@ -174,7 +174,7 @@ export default function Sponsorship() {
                   <div className="px-6 pb-6 mt-auto">
                     <button
                       onClick={() => {
-                        window.location.href = `mailto:info@hlre2025.com?subject=${encodeURIComponent(
+                        window.location.href = `mailto:info@hlre2026.com?subject=${encodeURIComponent(
                           `Interest in ${tier.name} Sponsorship`
                         )}&body=${encodeURIComponent(
                           `I'm interested in learning more about the ${tier.name} sponsorship opportunity for the Hope, Love & Resilience Expedition.`
@@ -256,7 +256,7 @@ export default function Sponsorship() {
               </p>
               <button
                 onClick={() => {
-                  window.location.href = 'mailto:info@hlre2025.com?subject=Custom%20Sponsorship%20Inquiry';
+                  window.location.href = 'mailto:info@hlre2026.com?subject=Custom%20Sponsorship%20Inquiry';
                 }}
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >

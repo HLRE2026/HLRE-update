@@ -63,7 +63,7 @@ const FundraisingJourney = () => {
       location: "Sunwapta Pass",
       title: "Film Production",
       description: "Document the expedition",
-      amount: "Sept 2025",
+      amount: "Sept 2026",
       status: "upcoming",
       icon: Camera,
       position: { x: "70%", y: "35%" }
