@@ -88,7 +88,7 @@ export default function Sponsorship() {
                 <Heart className="w-12 h-12 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-emerald-800">
-                Support via Indiegogo
+                Support the Expedition
               </h3>
               <p className="text-emerald-700 mb-6">
                 Your contribution directly supports the documentary production and helps us donate $200,000 
