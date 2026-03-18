@@ -33,7 +33,7 @@ export default function Footer() {
                   <span>Dan Adcock: 780-554-5576</span>
                 </div>
                 <div className="flex items-center space-x-2 pl-7">
-                  <span>Matt Dringenberg (Director): 780-909-2763</span>
+                  <span>Matt Dringenberg: 780-909-2763</span>
                 </div>
               </div>
               
