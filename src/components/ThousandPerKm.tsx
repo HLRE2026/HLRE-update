@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Bike, Heart, TrendingUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function ThousandPerKm() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -124,15 +125,12 @@ export default function ThousandPerKm() {
           transition={{ delay: 0.5 }}
           className="text-center mt-12"
         >
-          <button
-            onClick={() => {
-              const donateSection = document.getElementById('donate-section');
-              donateSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
-            className="bg-emerald-600 text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg"
+          <Link
+            to="/sponsorship"
+            className="inline-block bg-emerald-600 text-white px-12 py-5 rounded-full text-xl font-bold hover:bg-emerald-700 transition-all transform hover:scale-105 shadow-lg"
           >
             Support the Journey Today
-          </button>
+          </Link>
           <p className="mt-4 text-gray-600">Every kilometer counts. Every dollar helps.</p>
         </motion.div>
       </div>
