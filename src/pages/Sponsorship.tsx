@@ -80,7 +80,7 @@ export default function Sponsorship() {
           >
             <h2 className="text-4xl font-bold mb-4">Individual Supporters</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-              Every dollar counts! Support Mark's journey through our Indiegogo campaign. 
+              Every dollar counts! Support Mark's journey through our Fundraising campaign. 
               Donate any amount that feels right for you and help us reach our $300,000 goal.
             </p>
             <div className="bg-emerald-50 rounded-2xl p-8 max-w-2xl mx-auto">
@@ -88,14 +88,14 @@ export default function Sponsorship() {
                 <Heart className="w-12 h-12 text-emerald-600" />
               </div>
               <h3 className="text-2xl font-bold mb-4 text-emerald-800">
-                Support via Indiegogo
+                Support the Expedition
               </h3>
               <p className="text-emerald-700 mb-6">
                 Your contribution directly supports the documentary production and helps us donate $200,000 
                 to Glenrose Foundation and CMHA for mental health and stroke recovery programs.
               </p>
               <button
-                onClick={() => window.open('https://www.indiegogo.com', '_blank')}
+                onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
                 Make a Donation
@@ -172,22 +172,16 @@ export default function Sponsorship() {
 
                   {/* CTA Button */}
                   <div className="px-6 pb-6 mt-auto">
-                    <button
-                      onClick={() => {
-                        window.location.href = `mailto:info@hlre2025.com?subject=${encodeURIComponent(
-                          `Interest in ${tier.name} Sponsorship`
-                        )}&body=${encodeURIComponent(
-                          `I'm interested in learning more about the ${tier.name} sponsorship opportunity for the Hope, Love & Resilience Expedition.`
-                        )}`;
-                      }}
-                      className={`w-full py-3 rounded-lg font-semibold transition-all ${
+                    <Link
+                      to="/contact"
+                      className={`block w-full py-3 rounded-lg font-semibold transition-all text-center ${
                         tier.featured
                           ? 'bg-emerald-600 text-white hover:bg-emerald-700'
                           : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                       }`}
                     >
                       Contact Us
-                    </button>
+                    </Link>
                   </div>
                 </motion.div>
               );
@@ -256,7 +250,7 @@ export default function Sponsorship() {
               </p>
               <button
                 onClick={() => {
-                  window.location.href = 'mailto:info@hlre2025.com?subject=Custom%20Sponsorship%20Inquiry';
+                  window.location.href = 'mailto:mridocfilm@gmail.com?subject=Custom%20Sponsorship%20Inquiry';
                 }}
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
@@ -279,7 +273,7 @@ export default function Sponsorship() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => window.open('https://www.indiegogo.com', '_blank')}
+              onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
               className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-colors"
             >
               <Heart className="w-5 h-5" />

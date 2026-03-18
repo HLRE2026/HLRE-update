@@ -88,7 +88,7 @@ export default function OurVision() {
               </div>
               <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
                 <div className="text-4xl font-bold mb-2 text-blue-600">7 Days</div>
-                <p className="text-gray-600">Of filming in June 2026</p>
+                <p className="text-gray-600">Of filming in September 2026</p>
               </div>
               <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
                 <div className="text-4xl font-bold mb-2 text-purple-600">∞ Lives</div>
