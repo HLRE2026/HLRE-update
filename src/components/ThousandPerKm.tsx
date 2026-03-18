@@ -32,7 +32,7 @@ export default function ThousandPerKm() {
             Help Mark raise funds for every kilometer of his 300km journey
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-4">
-            Our goal is $300,000. The first $100,000 covers documentary production costs. All funds raised beyond $100,000 will go directly to the Glenrose Hospital Foundation and the Canadian Mental Health Association
+            Our goal is $300,000. The first $100,000 covers documentary production costs. All funds raised beyond $100,000 will go directly to the Glenrose Hospital Foundation and the Canadian Mental Health Association (CMHA)
           </p>
           <div className="bg-emerald-50 rounded-xl px-6 py-3 max-w-2xl mx-auto">
             <p className="text-emerald-700 font-medium">
