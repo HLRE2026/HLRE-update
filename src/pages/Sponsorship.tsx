@@ -95,7 +95,7 @@ export default function Sponsorship() {
                 to Glenrose Foundation and CMHA for mental health and stroke recovery programs.
               </p>
               <button
-                onClick={() => window.open('https://www.indiegogo.com', '_blank')}
+                onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
                 Make a Donation
@@ -279,7 +279,7 @@ export default function Sponsorship() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => window.open('https://www.indiegogo.com', '_blank')}
+              onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
               className="inline-flex items-center justify-center gap-2 bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold hover:bg-emerald-50 transition-colors"
             >
               <Heart className="w-5 h-5" />

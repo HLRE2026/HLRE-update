@@ -109,7 +109,7 @@ export default function SponsorshipTable() {
         {/* Call to Action */}
         <div className="mt-6 space-y-3">
           <button
-            onClick={() => window.open('https://www.indiegogo.com', '_blank')}
+            onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
             className="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
           >
             Make a Donation
