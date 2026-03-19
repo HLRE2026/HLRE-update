@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Volume2, VolumeX, Play, Pause } from 'lucide-react';
 import { Button } from './ui/button';
-import fallbackImage from '../../assets/HL&R Expedition.jpg';
+import fallbackImage from '../assets/HL&R Expedition.jpg';
 
 const VideoHero = () => {
   const [isMuted, setIsMuted] = useState(true);

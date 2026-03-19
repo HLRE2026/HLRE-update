@@ -1,4 +1,5 @@
 import { Play, Heart, Mountain } from 'lucide-react';
+import heroBackground from '../assets/HL&R Expedition.jpg';
 
 export default function Hero() {
   return (
@@ -7,7 +8,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
-          backgroundImage: `url('https://stackblitz.com/storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd3ZiRXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--f95609287e418ff576dcf9db2e3393f0eea9b1b5/41456648_10155624548560969_2016992598698229760_o.jpg')`,
+          backgroundImage: `url('${heroBackground}')`,
         }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30 z-10" />
