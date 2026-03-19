@@ -1,8 +1,8 @@
 import { Heart, Brain, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import glenroseLogo from '../../assets/glenrose-logo.png';
-import cmhaLogo from '../../assets/cmha-logo.png';
+import glenroseLogo from '../assets/glenrose-logo.png';
+import cmhaLogo from '../assets/cmha-logo.png';
 
 export default function CharitySupportSection() {
   const charities = [

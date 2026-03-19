@@ -1,4 +1,5 @@
 import { Play, ExternalLink } from 'lucide-react';
+import thumbnailImage from '../assets/everart-image.png';
 
 export default function FeaturedVideo() {
   return (
@@ -23,7 +24,7 @@ export default function FeaturedVideo() {
               <div 
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
-                  backgroundImage: `url('https://stackblitz.com/storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBejNiRXc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--3fdb6ae28a546d06f65614dde2898793d0650117/everart-image.png')`,
+                  backgroundImage: `url('${thumbnailImage}')`,
                 }}
               />
               
