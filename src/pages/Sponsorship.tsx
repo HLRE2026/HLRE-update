@@ -92,7 +92,7 @@ export default function Sponsorship() {
               </h3>
               <p className="text-emerald-700 mb-6">
                 Your contribution directly supports the documentary production and helps us donate $200,000 
-                to Glenrose Foundation and CMHA for mental health and stroke recovery programs.
+                to Glenrose Foundation and Canadian Mental Health Association, Edmonton Region (CMHA Edmonton) for mental health and stroke recovery programs.
               </p>
               <button
                 onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
