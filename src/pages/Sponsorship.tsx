@@ -12,7 +12,7 @@ const sponsorshipTiers = [
     color: "from-emerald-400 to-emerald-500",
     borderColor: "border-emerald-400",
     benefits: [
-      "Logo featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
+      "Name acknowledgement featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
       "Small size logo on HLRE marketing trailer (bike route coverage)",
       "Logo placement on the HLRE website with clickable sponsor feature & social media posts",
       "VIP tickets to the Premiere Gala Screening (2 tickets)"
@@ -26,7 +26,7 @@ const sponsorshipTiers = [
     icon: Trophy,
     color: "from-emerald-500 to-emerald-600",
     borderColor: "border-emerald-500",
-    featured: true,
+    featured: false,
     benefits: [
       "Name acknowledgement featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
       "Large size logo on HLRE marketing trailer (bike route & media coverage)",
@@ -92,7 +92,7 @@ export default function Sponsorship() {
               </h3>
               <p className="text-emerald-700 mb-6">
                 Your contribution directly supports the documentary production and helps us donate $200,000 
-                to Glenrose Foundation and CMHA for mental health and stroke recovery programs.
+                to Glenrose Foundation and Canadian Mental Health Association, Edmonton Region (CMHA Edmonton) for mental health and stroke recovery programs.
               </p>
               <button
                 onClick={() => window.open('https://glenrosefoundation.com/donate-now/', '_blank')}
@@ -248,15 +248,13 @@ export default function Sponsorship() {
                 Whether you're interested in event sponsorship, product placement, or a unique partnership opportunity, 
                 we can work together to create something meaningful for both your brand and our mission.
               </p>
-              <button
-                onClick={() => {
-                  window.location.href = 'mailto:mridocfilm@gmail.com?subject=Custom%20Sponsorship%20Inquiry';
-                }}
+              <Link
+                to="/contact"
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
                 <Megaphone className="w-5 h-5" />
                 Discuss Custom Package
-              </button>
+              </Link>
             </div>
           </motion.div>
 
