@@ -92,7 +92,7 @@ export default function OurVision() {
               </div>
               <div className="bg-white rounded-2xl shadow-lg p-8 flex flex-col items-center">
                 <div className="text-4xl font-bold mb-2 text-purple-600">∞ Lives</div>
-                <p className="text-gray-600">Touched by this story</p>
+                <p className="text-gray-600">Touched by this story and the documentary film</p>
               </div>
             </div>
           </div>
