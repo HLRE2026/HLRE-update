@@ -26,7 +26,7 @@ const sponsorshipTiers = [
     icon: Trophy,
     color: "from-emerald-500 to-emerald-600",
     borderColor: "border-emerald-500",
-    featured: true,
+    featured: false,
     benefits: [
       "Name acknowledgement featured in HLRE documentary film tail credits (community screenings, broadcast & online streaming channels)",
       "Large size logo on HLRE marketing trailer (bike route & media coverage)",
