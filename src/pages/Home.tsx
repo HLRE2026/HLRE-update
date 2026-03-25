@@ -32,7 +32,7 @@ export default function Home() {
               Watch the Full Story
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Join Mark on his 300km journey raising awareness for mental health across the Canadian Rockies
+              Join Mark on his 300km journey across the Canadian Rockies raising awareness for mental health
             </p>
           </motion.div>
           
