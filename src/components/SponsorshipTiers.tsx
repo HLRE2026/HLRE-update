@@ -27,7 +27,7 @@ export default function SponsorshipTiers() {
                 Donate any amount through our campaign! Every dollar counts toward our $300,000 goal.
               </p>
               <button
-                onClick={() => window.open('https://www.integrafilms.ca/hlre', '_blank')}
+                onClick={() => window.open('https://glenrosefoundation.com/ways-to-give/other-ways-to-give/hope-love-resilience-expedition/', '_blank')}
                 className="w-full bg-emerald-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-emerald-700 transition-colors"
               >
                 Make a Donation
