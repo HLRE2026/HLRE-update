@@ -172,8 +172,10 @@ export default function Sponsorship() {
 
                   {/* CTA Button */}
                   <div className="px-6 pb-6 mt-auto">
-                    <Link
-                      to="/contact"
+                    <a
+                      href="https://www.integrafilms.ca/hlre"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`block w-full py-3 rounded-lg font-semibold transition-all text-center ${
                         tier.featured
                           ? 'bg-emerald-600 text-white hover:bg-emerald-700'
@@ -181,7 +183,7 @@ export default function Sponsorship() {
                       }`}
                     >
                       Contact Us
-                    </Link>
+                    </a>
                   </div>
                 </motion.div>
               );
@@ -248,13 +250,15 @@ export default function Sponsorship() {
                 Whether you're interested in event sponsorship, product placement, or a unique partnership opportunity, 
                 we can work together to create something meaningful for both your brand and our mission.
               </p>
-              <Link
-                to="/contact"
+              <a
+                href="https://www.integrafilms.ca/hlre"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-emerald-600 text-white px-8 py-4 rounded-full font-semibold hover:bg-emerald-700 transition-colors"
               >
                 <Megaphone className="w-5 h-5" />
                 Discuss Custom Package
-              </Link>
+              </a>
             </div>
           </motion.div>
 
